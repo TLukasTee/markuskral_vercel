@@ -15,6 +15,11 @@ import { ProductSelect } from './ui/ProductSelect'
 
 const Products: CollectionConfig = {
   slug: 'products',
+  
+  labels: {
+    singular: 'Antiquität',
+    plural: 'Antiquitäten',
+  },
   admin: {
     useAsTitle: 'title',
     defaultColumns: ['title', 'stripeProductID', '_status'],
@@ -32,6 +37,8 @@ const Products: CollectionConfig = {
   },
   versions: {
     drafts: true,
+    maxPerDoc: 5,
+
   },
   access: {
     read: () => true,
@@ -42,8 +49,38 @@ const Products: CollectionConfig = {
   fields: [
     {
       name: 'title',
+      label: 'Name der Antiquität',
       type: 'text',
       required: true,
+      
+    },
+    {
+      name: 'title2',
+      label: 'Aus welchem Jahr ist das Objekt? ( z.B.: 1641 )',
+      type: 'text',
+      required: true,
+    },
+    {
+      name: 'relatedProducts',
+      label: 'Ähnliche Objekte: ( z.B.: "Weiteres Gemälde von Albrecht Dürer" )',
+      type: 'relationship',
+      relationTo: 'products',
+      hasMany: true,
+      filterOptions: ({ id }) => {
+        return {
+          id: {
+            not_in: [id],
+          },
+        }
+      },
+    },
+    {
+              
+      name: 'layout',
+      type: 'blocks',
+      hidden: true,
+      required: false,
+      blocks: [CallToAction, Content, MediaBlock, Archive],
     },
     {
       name: 'publishedOn',
@@ -54,41 +91,30 @@ const Products: CollectionConfig = {
           pickerAppearance: 'dayAndTime',
         },
       },
+      
       hooks: {
-        beforeChange: [
-          ({ siblingData, value }) => {
-            if (siblingData._status === 'published' && !value) {
-              return new Date()
-            }
-            return value
-          },
-        ],
+       
       },
     },
     {
       type: 'tabs',
+      hidden: true,
       tabs: [
-        {
-          label: 'Content',
-          fields: [
-            {
-              name: 'layout',
-              type: 'blocks',
-              required: true,
-              blocks: [CallToAction, Content, MediaBlock, Archive],
-            },
-          ],
-        },
+        
         {
           label: 'Product Details',
+          hidden: true,
           fields: [
             {
               name: 'stripeProductID',
               label: 'Stripe Product',
               type: 'text',
+              hidden: true,
               admin: {
+                hidden: true,
                 components: {
                   Field: ProductSelect,
+                  
                 },
               },
             },
@@ -106,11 +132,13 @@ const Products: CollectionConfig = {
               name: 'enablePaywall',
               label: 'Enable Paywall',
               type: 'checkbox',
+              hidden: true,
             },
             {
               name: 'paywall',
               label: 'Paywall',
               type: 'blocks',
+              hidden: true,
               access: {
                 read: checkUserPurchases,
               },
@@ -123,25 +151,14 @@ const Products: CollectionConfig = {
     {
       name: 'categories',
       type: 'relationship',
+      label: 'Kategorien',
       relationTo: 'categories',
       hasMany: true,
       admin: {
         position: 'sidebar',
       },
     },
-    {
-      name: 'relatedProducts',
-      type: 'relationship',
-      relationTo: 'products',
-      hasMany: true,
-      filterOptions: ({ id }) => {
-        return {
-          id: {
-            not_in: [id],
-          },
-        }
-      },
-    },
+    
     slugField(),
     {
       name: 'skipSync',

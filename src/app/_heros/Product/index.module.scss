@@ -52,9 +52,9 @@
   text-decoration: none;
   display: block;
   position: relative;
-  aspect-ratio: 5 / 4;
-  margin-bottom: calc(var(--base) / 2);
-  width: calc(100% + calc(var(--gutter-h) / 2));
+  aspect-ratio: 1 / 1;
+  margin-bottom: calc(var(--base) / 1);
+  width: calc(100% + calc(var(--gutter-h) / 1));
 
   @include mid-break {
     margin-left: calc(var(--gutter-h) * -1);
@@ -63,7 +63,7 @@
 }
 
 .image {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .placeholder {

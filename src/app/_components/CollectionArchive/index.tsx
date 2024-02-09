@@ -11,6 +11,7 @@ import { PageRange } from '../PageRange'
 import { Pagination } from '../Pagination'
 
 import classes from './index.module.scss'
+import MaxWidthWrapper from '../../custom_components/MaxWidthWrapper'
 
 type Result = {
   docs: (Product | string)[]
@@ -165,46 +166,48 @@ export const CollectionArchive: React.FC<Props> = props => {
   }, [page, categories, relationTo, onResultChange, sort, limit, populateBy])
 
   return (
-    <div className={[classes.collectionArchive, className].filter(Boolean).join(' ')}>
-      <div className={classes.scrollRef} ref={scrollRef} />
-      {!isLoading && error && <Gutter>{error}</Gutter>}
-      <Fragment>
-        {showPageRange !== false && populateBy !== 'selection' && (
-          <Gutter>
-            <div className={classes.pageRange}>
-              <PageRange
-                collection={relationTo}
-                currentPage={results.page}
-                limit={limit}
-                totalDocs={results.totalDocs}
-              />
-            </div>
-          </Gutter>
-        )}
-        <Gutter>
-          <div className={classes.grid}>
-            {results.docs?.map((result, index) => {
-              if (typeof result === 'object' && result !== null) {
-                return (
-                  <div className={classes.column} key={index}>
-                    <Card doc={result} relationTo={relationTo} showCategories />
-                  </div>
-                )
-              }
 
-              return null
-            })}
-          </div>
-          {results.totalPages > 1 && populateBy !== 'selection' && (
-            <Pagination
-              className={classes.pagination}
-              onClick={setPage}
-              page={results.page}
-              totalPages={results.totalPages}
+    <div className={[classes.collectionArchive, className].filter(Boolean).join(' ')}>
+    <div className={classes.scrollRef} ref={scrollRef} />
+    {!isLoading && error && <Gutter>{error}</Gutter>}
+    <Fragment>
+      {showPageRange !== false && populateBy !== 'selection' && (
+        <Gutter>
+          <div className={classes.pageRange}>
+            <PageRange
+              collection={relationTo}
+              currentPage={results.page}
+              limit={limit}
+              totalDocs={results.totalDocs}
             />
-          )}
+          </div>
         </Gutter>
-      </Fragment>
-    </div>
+      )}
+      <Gutter>
+        <div className="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 mb-24">
+          {results.docs?.map((result, index) => {
+            if (typeof result === 'object' && result !== null) {
+              return (
+
+                  <Card doc={result} relationTo={relationTo} showCategories />
+
+              )
+            }
+
+            return null
+          })}
+        </div>
+        {results.totalPages > 1 && populateBy !== 'selection' && (
+          <Pagination
+            className={classes.pagination}
+            onClick={setPage}
+            page={results.page}
+            totalPages={results.totalPages}
+          />
+        )}
+      </Gutter>
+    </Fragment>
+  </div>
   )
 }
+  

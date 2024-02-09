@@ -4,11 +4,11 @@ import { VerticalPadding } from '../_components/VerticalPadding'
 
 export default function NotFound() {
   return (
-    <Gutter>
+    <Gutter className='flex justify-center mt-96 mb-48'>
       <VerticalPadding top="none" bottom="large">
-        <h1 style={{ marginBottom: 0 }}>404</h1>
-        <p>This page could not be found.</p>
-        <Button href="/" label="Go Home" appearance="primary" />
+        <h1 style={{ marginBottom: 0 }}><strong> 404  </strong></h1>
+        <p>Seite konnte nicht gefunden werden.</p>
+        <Button href="/" label=" Zurück" appearance="primary" />
       </VerticalPadding>
     </Gutter>
   )

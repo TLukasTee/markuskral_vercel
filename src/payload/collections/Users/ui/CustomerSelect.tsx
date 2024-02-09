@@ -66,16 +66,7 @@ export const CustomerSelect: React.FC<TextField> = props => {
         }}
       >
         {`Select the related Stripe customer or `}
-        <a
-          href={`https://dashboard.stripe.com/${
-            process.env.PAYLOAD_PUBLIC_STRIPE_IS_TEST_KEY ? 'test/' : ''
-          }customers/create`}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: 'var(--theme-text' }}
-        >
-          create a new one
-        </a>
+        
         {'.'}
       </p>
       <Select {...props} label="" options={options} />

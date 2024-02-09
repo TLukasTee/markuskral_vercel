@@ -13,6 +13,10 @@ import { CustomerSelect } from './ui/CustomerSelect'
 
 const Users: CollectionConfig = {
   slug: 'users',
+  labels: {
+    singular: 'Benutzer',
+    plural: 'Benutzer',
+  },
   admin: {
     useAsTitle: 'name',
     defaultColumns: ['name', 'email'],
@@ -60,6 +64,10 @@ const Users: CollectionConfig = {
           label: 'customer',
           value: 'customer',
         },
+        {
+          label: 'topadmin',
+          value: 'topadmin',
+        },
       ],
       hooks: {
         beforeChange: [ensureFirstUserIsAdmin],
@@ -70,7 +78,8 @@ const Users: CollectionConfig = {
         update: admins,
       },
     },
-    {
+    
+    /*{
       name: 'purchases',
       label: 'Purchases',
       type: 'relationship',
@@ -94,7 +103,7 @@ const Users: CollectionConfig = {
         },
       },
     },
-    {
+    /*{
       label: 'Cart',
       name: 'cart',
       type: 'group',
@@ -141,7 +150,7 @@ const Users: CollectionConfig = {
         // },
       ],
     },
-    {
+    /*{
       name: 'skipSync',
       label: 'Skip Sync',
       type: 'checkbox',
@@ -150,7 +159,7 @@ const Users: CollectionConfig = {
         readOnly: true,
         hidden: true,
       },
-    },
+    },*/
   ],
   timestamps: true,
 }

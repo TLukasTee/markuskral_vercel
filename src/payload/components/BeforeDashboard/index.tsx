@@ -1,99 +1,60 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Banner } from 'payload/components'
+import { CloudArrowUpIcon, LockClosedIcon, ServerIcon, ArrowRightIcon } from '@heroicons/react/20/solid'
 
 import { SeedButton } from './SeedButton'
 
 import './index.scss'
-
+import '../../../tailwind.css'
 const baseClass = 'before-dashboard'
 
 const BeforeDashboard: React.FC = () => {
   return (
-    <div className={baseClass}>
-      <Banner className={`${baseClass}__banner`} type="success">
-        <h4>Welcome to your dashboard!</h4>
-      </Banner>
-      Here&apos;s what to do next:
-      <ul className={`${baseClass}__instructions`}>
-        <li>
-          <SeedButton />
-          {' with a few products and pages to jump-start your new project, then '}
-          <a href="/">visit your website</a>
-          {' to see the results.'}
-        </li>
-        <li>
-          {'Head over to '}
-          <a
-            href="https://dashboard.stripe.com/test/apikeys"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {'Stripe to obtain your API Keys'}
-          </a>
-          {
-            '. Create a new account if needed, then copy them into your environment variables and restart your server. See the '
-          }
-          <a
-            href="https://github.com/payloadcms/payload/blob/main/templates/ecommerce/README.md#stripe"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {'README'}
-          </a>
-          {' for more details.'}
-        </li>
-        <li>
-          <Link to="/admin/collections/products">Link each of your products</Link>
-          {' to Stripe by selecting the corresponding product using the dropdown under '}
-          <i>Product Details</i>.
-        </li>
-        <li>
-          If you created this repo using Payload Cloud, head over to GitHub and clone it to your
-          local machine. It will be under the <i>GitHub Scope</i> that you selected when creating
-          this project.
-        </li>
-        <li>
-          {'Modify your '}
-          <a
-            href="https://payloadcms.com/docs/configuration/collections"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            collections
-          </a>
-          {' and add more '}
-          <a
-            href="https://payloadcms.com/docs/fields/overview"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            fields
-          </a>
-          {' as needed. If you are new to Payload, we also recommend you check out the '}
-          <a
-            href="https://payloadcms.com/docs/getting-started/what-is-payload"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Getting Started
-          </a>
-          {' docs.'}
-        </li>
-        <li>
-          Commit and push your changes to the repository to trigger a redeployment of your project.
-        </li>
-      </ul>
-      {'Pro Tip: This block is a '}
-      <a
-        href={'https://payloadcms.com/docs/admin/components#base-component-overrides'}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        custom component
-      </a>
-      , you can remove it at any time by updating your <strong>payload.config</strong>.
+    <div className="relative isolate overflow-hidden bg-white py-24 sm:py-32">
+   
+    <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-2xl lg:mx-0">
+        <p className="text-lg font-semibold leading-8 tracking-tight text-red-600">Hallo Herr Kral</p>
+        <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Anleitung zum Produkthochladen</h1>
+        <p className="mt-6 text-xl leading-8 text-gray-700">
+      Unser System ermöglicht es Ihnen, je nach Ihren Bedürfnissen und dem aktuellen Stand Ihrer Kollektion, neue Antiquitätenobjekte hinzuzufügen oder vorhandene zu entfernen.
+         Dieser Prozess ist speziell darauf ausgerichtet, Ihnen maximale Flexibilität und Kontrolle über Ihre Sammlung zu geben!      </p>
+      </div>
+      <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:mt-10 lg:max-w-none lg:grid-cols-12">
+       
+        <div className="max-w-xl text-base leading-7 text-gray-700 lg:col-span-7">
+         
+          <ul role="list" className="mt-8 max-w-xl space-y-3 text-gray-600">
+            <li className="flex gap-x-3">
+              <ArrowRightIcon className="mt-1 h-5 w-5 flex-none text-red-600" aria-hidden="true" />
+              <span>
+                <strong className="font-semibold text-gray-900"> Links im Navigationsmenü "Produkte" anklicken</strong> 
+              </span>
+            </li>
+            <li className="flex gap-x-3">
+              <ArrowRightIcon className="mt-1 h-5 w-5 flex-none text-red-600" aria-hidden="true" />
+              <span>
+                <strong className="font-semibold text-gray-900"> Klicken Sie auf "Neues Produkt" erstellen</strong> 
+              </span>
+            </li>
+            <li className="flex gap-x-3">
+              <ArrowRightIcon className="mt-1 h-5 w-5 flex-none text-red-600" aria-hidden="true" />
+              <span>
+                <strong className="font-semibold text-gray-900">Database backups.</strong> Ac tincidunt sapien
+                vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+              </span>
+            </li>
+          </ul>
+          
+          <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Sie brauchen Hilfe? Kein Problem.</h2>
+          <p className="mt-6">
+              Senden Sie uns einfach per Whatsapp eine Nachricht an      <span className="text-black text-red-600 hover:text-red-500  text-md font-semibold"> +43 670 2024825 </span> und wir werden uns schnellstmöglichmit Ihnen in Verbindung setzen!
+          </p>
+        </div>
+      </div>
     </div>
+  </div>
   )
 }
 
