@@ -80,7 +80,7 @@ export async function Footer() {
               className='text-sm text-muted-foreground hover:text-gray-600 px-2  py-2 '>
               Datenschutzerklärung
             </Link>
-            <Link href='https://hyd-markuskral.payloadcms.app/admin'
+            <Link href='https://markuskral.payloadcms.app/admin'
                   className='text-sm text-muted-foreground hover:text-gray-600 bg-red-300 hover:bg-red-300 font-semibold  px-2  py-2 border-2 border-white rounded-full'>
                     <LockClosedIcon className='w-4 h-4'/>
               </Link>
