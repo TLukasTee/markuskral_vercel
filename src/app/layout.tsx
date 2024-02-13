@@ -17,11 +17,16 @@ subsets: ['latin'], });
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="at" suppressHydrationWarning>
       <head>
         <InitTheme />
         <link rel="icon" href="/favicon.ico" sizes="32x32" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+      <title>Markus Kral Antiquitäten - Einzigartige Funde und Schätze</title>
+      <meta name="description" content="Entdecken Sie bei Markus Kral Antiquitäten eine sorgfältig kuratierte Auswahl an Möbeln, Kunst und Sammlerstücken aus vergangenen Epochen. Tauchen Sie ein in die Welt einzigartiger Antiquitäten und finden Sie Ihr perfektes Stück Geschichte."/>
+      <meta name="keywords" content="Antiquitäten, Markus Kral, Vintage Möbel, Sammlerstücke, Kunst, historische Funde"/>
+      
       </head>
       <body className={inter.className}>
         <Providers>

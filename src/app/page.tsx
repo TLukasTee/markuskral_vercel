@@ -10,7 +10,9 @@ import AQ_5 from './images/hero_antiqs/AQ_Uhrenstatue.svg';
 import AQ_6 from './images/hero_antiqs/AQ_Gemaelde3.svg';
 import AQ_7 from './images/hero_antiqs/AQ_Uhr2.svg';
 import AQ_8 from './images/hero_antiqs/AQ_Moebel2.svg';
-
+import logoEbay from './images/logo/Logo (3).svg';
+import logoWillhaben from './images/logo/Logo (1).svg';
+import logoPorc from './images/logo/Logo (4).svg';
 import MarkusKral from './images/MArkusKrala.svg';
 import InnenRaum1 from './images/Vorstellungsbilder/InnenRaum1.svg';
 import InnenRaum2 from './images/Vorstellungsbilder/InnenRaum2.svg';
@@ -188,18 +190,18 @@ export default function Home() {
                 </div>
                 <a href="/schauraum">
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
-                  <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80 ">
+                  <div className="ml-auto 2xl:w-44 xl:w-44 lg:w-44  md:w-44 sm:w-44  w-36 flex-none space-y-8 pt-32  sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80 ">
               
                     <div className="relative">
                       <Image
                         src={AQ_1}
                         alt="test"
-                        className="aspect-[2/3] w-full rounded-xl bg-neutral-100  object-fit p-5 shadow-lg"
+                        className="aspect-[2/3] w-full rounded-xl bg-neutral-50  object-fit p-5 shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                   </div>
-                  <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
+                  <div className="mr-auto 2xl:w-44 xl:w-44 lg:w-44  md:w-44 sm:w-44  w-36 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                     <div className="relative">
                       <Image
                        src={AQ_6}
@@ -217,7 +219,7 @@ export default function Home() {
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                   </div>
-                  <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+                  <div className=" 2xl:w-44 xl:w-44 lg:w-44  md:w-44 sm:w-44 w-36 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
                       <Image
                         src={AQ_7}
@@ -244,8 +246,7 @@ export default function Home() {
      
 
        
-  
-
+ 
     
 
       <section className=''>
@@ -332,7 +333,50 @@ export default function Home() {
       </div>
     </div>
       </section>
+      <section> 
+
+
+
+<div className="bg-red-800 py-24 sm:py-12">
+  <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <h2 className="text-center text-lg font-semibold leading-8 text-white">
+      Unsere Antiquitaeten finden Sie auch hier!
+    </h2>
+    <div className="mx-auto mt-10 grid max-w-lg grid-cols-3 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">
+     <a   href="https://www.ebay.at/str/antikesmarkuskral"> 
+      <Image
     
+        className="col-span-2 max-h-20 w-full object-contain lg:col-span-1  tranis transition grayscale hover:grayscale-0 duration-150 hover:duration-150 ease-in-out"
+        src={logoEbay}
+        alt="Transistor"
+    
+      />
+      </a>
+      <a   href="https://www.willhaben.at/iad/kaufen-und-verkaufen/webshop/marktplatz?orgId=26755305"> 
+      <Image
+    
+        className="col-span-2 max-h-20 w-full object-contain lg:col-span-1 grayscale hover:grayscale-0 duration-150 hover:duration-150 ease-in-out"
+        src={logoWillhaben}
+        alt="Transistor"
+     
+      />
+      </a>
+      <a   href="https://www.proantic.com/en/galerie/antiquitaten-markus-kral/"> 
+      <Image
+    
+        className="col-span-2 max-h-20 w-full object-contain lg:col-span-1 grayscale hover:grayscale-0 duration-150 hover:duration-150 ease-in-out"
+        src={logoPorc}
+        alt="Transistor"
+   
+      />
+      </a>
+     
+    </div>
+  </div>
+</div>
+
+</section>
+
       <section> 
       <div className="overflow-hidden bg-white py-32">
       <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">

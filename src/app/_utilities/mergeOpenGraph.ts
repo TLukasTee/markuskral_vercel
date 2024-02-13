@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 
 const defaultOpenGraph: Metadata['openGraph'] = {
   type: 'website',
-  siteName: 'Payload E-Commerce Template',
-  title: 'Payload E-Commerce Template',
-  description: 'An open-source e-commerce store built with Payload and Next.js.',
+  siteName: 'Markus Kral Antiquitaeten',
+  title: 'Markus Kral Antiquitaeten',
+  description: 'Stöbern Sie in unseren einzigartigen Sammlungen von Antiquitäten.',
   images: [
     {
-      url: 'https://payloadcms.com/images/og-image.jpg',
+      url: 'https://markuskral.payloadcms.app/_next/static/media/Aussen.e9b10188.svg',
     },
   ],
 }
