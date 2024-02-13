@@ -24,7 +24,7 @@ import { Lora } from "next/font/google";
 import Image from 'next/image';
 import { Fragment, useState } from 'react';
 import { Header } from '../../../payload/payload-types';
-import Logo_Red from '../../images/Logos/Logo_MarkusKral.svg';
+import Logo_Red from '../../images/Logos/LogoKral2.svg';
 
 const service = [
   { name: 'Montage', description: 'Professionelle Montage und Wartung', href: '/products?category=ui_kits', icon: Cog8ToothIcon },
@@ -71,7 +71,7 @@ export  function Header() {
         <div className="flex lg:flex-1">
         <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <Image className="h-16 w-auto" src={Logo_Red} alt="" />
+            <Image className="h-12 w-auto" src={Logo_Red} alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
