@@ -181,6 +181,7 @@ export default function Home() {
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
                       href="/schauraum"
+                      title="Markus Kral Antiquitaeten | Schauraum "
                       className="rounded-md bg-red-600 px-6 py-5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 tracking-widest  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       ZU DEN ANTIQUITÄTEN
@@ -188,14 +189,14 @@ export default function Home() {
                     
                   </div>
                 </div>
-                <a href="/schauraum">
+                <a href="/schauraum"  title="Markus Kral | Schauraum">
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                   <div className="ml-auto 2xl:w-44 xl:w-44 lg:w-44  md:w-44 sm:w-44  w-36 flex-none space-y-8 pt-32  sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80 ">
               
                     <div className="relative">
                       <Image
                         src={AQ_1}
-                        alt="test"
+                        alt="Markus Kral Antiquitäten | Schmuckstück "
                         className="aspect-[2/3] w-full rounded-xl bg-neutral-50  object-fit p-5 shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -205,7 +206,7 @@ export default function Home() {
                     <div className="relative">
                       <Image
                        src={AQ_6}
-                        alt="re"
+                       alt="Markus Kral Antiquitäten | Schmuckstück "
                         className="aspect-[2/3] w-full rounded-xl bg-neutral-100 object-fit p-3 shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -213,7 +214,7 @@ export default function Home() {
                     <div className="relative">
                       <Image
                         src={AQ_8}
-                        alt=""
+                        alt="Markus Kral Antiquitäten | Schmuckstück "
                         className="aspect-[2/3] w-full rounded-xl  bg-neutral-100 object-fit p-0 shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -223,7 +224,7 @@ export default function Home() {
                     <div className="relative">
                       <Image
                         src={AQ_7}
-                        alt=""
+                        alt="Markus Kral Antiquitäten | Schmuckstück "
                         className="aspect-[2/3] w-full rounded-xl  bg-neutral-100 object-fit p-2 shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -231,7 +232,7 @@ export default function Home() {
                     <div className="relative">
                       <Image
                          src={AQ_4}
-                        alt=""
+                         alt="Markus Kral Antiquitäten | Schmuckstück "
                         className="aspect-[2/3] w-full rounded-xl  bg-neutral-100 object-fit  p-2 shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -258,7 +259,7 @@ export default function Home() {
              
                <Image
                         src={MarkusKral}
-                        alt="test"
+                        alt="Markus Kral Antiquitäten | Markus Kral"
                         className="absolute inset-0 h-full w-full object-cover "
                       />
               <div className="absolute inset-0 bg-gray-50 mix-blend-multiply" />
@@ -276,8 +277,7 @@ export default function Home() {
               </div>
               <figure className="relative isolate">
                 
-                <img src="https://tailwindui.com/img/logos/workcation-logo-white.svg" alt="" className="h-12 w-auto" />
-                <blockquote className="mt-6 text-xl font-semibold leading-8 text-white h-52">
+                <blockquote className="mt-6 text-xl font-semibold leading-8 text-white h-72">
                 
                 </blockquote>
                
@@ -293,9 +293,9 @@ export default function Home() {
           <div>
             <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
               <p className="text-base font-semibold leading-7 text-red-600">MARKUS KRAL ANTIQUIÄTEN</p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Leidenschaft für Antiquitäten und Expertise
-              </h1>
+              </h2>
               <div className="max-w-xl text-lg">
                 <p className="mt-6">
                 Als Inhaber und leidenschaftlicher Antiquitätenliebhaber, 
@@ -315,8 +315,9 @@ export default function Home() {
                   <div className="flex-none">
                     <Image
                       src={Bares}
-                      alt=""
+                      alt="Markus Kral Antiquitäten | Zu Bares für Rares"
                       className="aspect-[5/5] w-[10rem] max-w-none rounded-3xl p-5 object-fit"
+                      
                     />
                  </div>
                 <p className="flex-grow"> Seit 2019 bin ich Teil der österreichischen Show 'Bares für Rares'  und darf meine Begeisterung für Antiquitäten mit einem breiteren Publikum  teilen. </p> 
@@ -343,30 +344,31 @@ export default function Home() {
       Unsere Antiquitaeten finden Sie auch hier!
     </h2>
     <div className="mx-auto mt-10 grid max-w-lg grid-cols-3 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">
-     <a   href="https://www.ebay.at/str/antikesmarkuskral"> 
+     <a   title="Markus Kral | Zu Ebay"  href="https://www.ebay.at/str/antikesmarkuskral"> 
       <Image
     
         className="col-span-2 max-h-20 w-full object-contain lg:col-span-1  tranis transition grayscale hover:grayscale-0 duration-150 hover:duration-150 ease-in-out"
         src={logoEbay}
-        alt="Transistor"
+        alt="Markus Kral Antiquitäten | Zu Ebay"
     
       />
       </a>
-      <a   href="https://www.willhaben.at/iad/kaufen-und-verkaufen/webshop/marktplatz?orgId=26755305"> 
+      <a   title="Markus Kral | Zu Willhaben" href="https://www.willhaben.at/iad/kaufen-und-verkaufen/webshop/marktplatz?orgId=26755305"> 
       <Image
     
         className="col-span-2 max-h-20 w-full object-contain lg:col-span-1 grayscale hover:grayscale-0 duration-150 hover:duration-150 ease-in-out"
         src={logoWillhaben}
-        alt="Transistor"
+        alt="Markus Kral Antiquitäten | Zu Willhaben"
+
      
       />
       </a>
-      <a   href="https://www.proantic.com/en/galerie/antiquitaten-markus-kral/"> 
+      <a   title="Markus Kral | Zu Proantic"  href="https://www.proantic.com/en/galerie/antiquitaten-markus-kral/"> 
       <Image
     
         className="col-span-2 max-h-20 w-full object-contain lg:col-span-1 grayscale hover:grayscale-0 duration-150 hover:duration-150 ease-in-out"
         src={logoPorc}
-        alt="Transistor"
+        alt="Markus Kral Antiquitäten | Zu Proantic"
    
       />
       </a>
@@ -382,7 +384,7 @@ export default function Home() {
       <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
           <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Willkommen in unserer Welt der Antiquitäten</h2>
+            <h3 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Willkommen in unserer Welt der Antiquitäten</h3>
             <p className="mt-6 text-lg leading-8 text-gray-600">
             <strong>   Seit 1988 </strong> sind wir stolz darauf, eine breite Palette von    <strong>    Antiquitäten </strong> anzubieten, die von Möbeln aus verschiedenen Stilepochen bis hin zu antiken Kachelöfen, Bildern, Lampen, Uhren und Kleinkunst reicht. 
             
@@ -400,7 +402,7 @@ export default function Home() {
             <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
               <Image
                 src={Aussen}
-                alt=""
+                alt="Markus Kral Antiquitäten | Aussenbereich"
                 className="aspect-[8/5] w-[37rem] max-w-none rounded-3xl bg-white object-cover "
               />
             </div>
@@ -409,21 +411,21 @@ export default function Home() {
               <div className="hidden lg:block order-first flex w-64 flex-none justify-end lg:w-auto">
                 <Image
                   src={SchrankWV}
-                  alt=""
+                  alt="Markus Kral Antiquitäten | Schrank"
                   className="aspect-[9/7] w-[23rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
                 />
               </div>
               <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
                 <Image
                   src={InnenRaum1}
-                  alt=""
+                  alt="Markus Kral Antiquitäten | Innenbereich"
                   className="aspect-[8/7] w-[27rem] max-w-none rounded-2xl bg-gray-50 object-cover"
                 />
               </div>
               <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
                 <Image
                   src={WV}
-                  alt=""
+                  alt="Markus Kral Antiquitäten | VW Bus"
                   className="aspect-[6/7] w-[23rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
                 />
               </div>
@@ -445,7 +447,7 @@ export default function Home() {
             <Image
               className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
               src={Aussen}
-              alt=""
+              alt="Markus Kral Antiquitäten | Aussenbereich"
             />
             <div className="w-full flex-auto">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl uppercase">Kontaktieren Sie uns!</h2>
@@ -461,14 +463,15 @@ export default function Home() {
               </ul>
               <div className="mt-10 flex">
               <a
+              title="Markus Kral | Kontaktforumlar"
               href="/kontakt"
               className="rounded-md bg-red-600 text-white tracking-widest uppercase px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
                  Zum Kontaktformular
             </a>
-            <a href="tel:+43664 2418949" className="text-sm font-semibold leading-6 text-white">
+            <a href="tel:+43664 2418949" className="text-sm font-semibold leading-6 text-white"        title="Markus Kral | Anrufen">
             <dt className="flex-none m-2">
-            
+                  
                 <PhoneIcon className="h-7 w-6 text-red-600" aria-hidden="true" />
               </dt>
             </a>
@@ -523,7 +526,7 @@ export default function Home() {
         </div>
         <div className="flex justify-center mt-12 ">
 
-              <a target="_blank" href="https://www.google.com/search?kgmid=/g/1tdl0crq&hl=de-AT&q=Antiquit%C3%A4ten+Markus+Kral&kgs=25be8bd4b11ac65a&shndl=17&shem=losc&source=sh/x/kp/osrp/m5/1#lrd=0x477393879ab0ff0b:0xddd6923ad06b9be5,3,,,," className="bg-red-600 px-4 py-2 text-white rounded-md ">
+              <a target="_blank" title="Markus Kral | Rezensionen" href="https://www.google.com/search?kgmid=/g/1tdl0crq&hl=de-AT&q=Antiquit%C3%A4ten+Markus+Kral&kgs=25be8bd4b11ac65a&shndl=17&shem=losc&source=sh/x/kp/osrp/m5/1#lrd=0x477393879ab0ff0b:0xddd6923ad06b9be5,3,,,," className="bg-red-600 px-4 py-2 text-white rounded-md ">
 
                 Weitere Rezensionen ansehen
               </a>

@@ -5,9 +5,10 @@ const defaultOpenGraph: Metadata['openGraph'] = {
   siteName: 'Markus Kral Antiquitaeten',
   title: 'Markus Kral Antiquitaeten',
   description: 'Stöbern Sie in unseren einzigartigen Sammlungen von Antiquitäten.',
+  url: 'https://www.antiquitaeten-kral.at/',
   images: [
     {
-      url: 'https://markuskral.payloadcms.app/_next/static/media/Aussen.e9b10188.svg',
+      url: 'https://antiquitaeten-kral.at/_next/static/media/Aussen.e9b10188.svg',
     },
   ],
 }

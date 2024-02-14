@@ -69,7 +69,7 @@ export  function Header() {
      <header className="bg-white">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-        <a href="/" className="-m-1.5 p-1.5">
+        <a href="/" className="-m-1.5 p-1.5" title="Markus Kral | Start">
             <span className="sr-only">Your Company</span>
             <Image className="h-12 w-auto" src={Logo_Red} alt="" />
           </a>
@@ -85,7 +85,7 @@ export  function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="/" className={`flex items-center gap-x-1 ${tub.className}  text-md font-semibold leading-6 text-gray-900 outline-none border-none tracking-widest`}>
+          <a href="/" title="Markus Kral | Start" className={`flex items-center gap-x-1 ${tub.className}  text-md font-semibold leading-6 text-gray-900 outline-none border-none tracking-widest`}>
               ÜBERSICHT
             </a>
 
@@ -117,7 +117,7 @@ export  function Header() {
                         <item.icon className="h-6 w-6 text-gray-600 group-hover:text-red-600" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
-                        <a href={item.href} className= {`${tub.className} block font-bold  text-lg  text-gray-900`}>
+                        <a href={item.href} title="Markus Kral Antiquitäten | Menü" className= {`${tub.className} block font-bold  text-lg  text-gray-900`}>
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
@@ -128,7 +128,7 @@ export  function Header() {
                 </div>
                 <div className="grid grid-cols-1 divide-x divide-gray-900/5 bg-red-500">
               
-                    <a
+                    <a title="Markus Kral Antiquitäten | Schauraum"
                         href="/schauraum"
                       className={`relative text-red-500    ${tub.className} text-base font-semibold tracking-tight flex items-center justify-center gap-x-2.5 p-3 text-md font-semibold leading-6 text-white tracking-widest uppercase  hover:bg-red-600`}
                     >
@@ -142,18 +142,18 @@ export  function Header() {
           </Popover>
 
          
-          <a href="/wertermittlung" className={`flex items-center gap-x-1 ${tub.className}  text-md font-semibold leading-6 text-gray-900 outline-none border-none tracking-widest`}>
+          <a href="/wertermittlung" title="Markus Kral Antiquitäten | Wertermittlung" className={`flex items-center gap-x-1 ${tub.className}  text-md font-semibold leading-6 text-gray-900 outline-none border-none tracking-widest`}>
             WERTERMITTLUNG
           </a>
 
-          <a href="/restaurierung" className={`flex items-center gap-x-1 ${tub.className}  text-md font-semibold leading-6 text-gray-900 outline-none border-none tracking-widest`}>
+          <a href="/restaurierung"  title="Markus Kral Antiquitäten | Restaurierung" className={`flex items-center gap-x-1 ${tub.className}  text-md font-semibold leading-6 text-gray-900 outline-none border-none tracking-widest`}>
              RESTAURIERUNG
           </a>
 
          
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="/kontakt" className={`"tracking-widest rounded-md bg-red-600 ${tub.className} tracking-widest px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"`}>
+          <a href="/kontakt"  title="Markus Kral Antiquitäten | Kontakt"  className={`"tracking-widest rounded-md bg-red-600 ${tub.className} tracking-widest px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"`}>
             KONTAKT
           </a>
         </div>
@@ -162,7 +162,7 @@ export  function Header() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="#" className="-m-1.5 p-1.5" title="Markus Kral Antiquitäten | Mobile">
               <span className="sr-only">Your Company</span>
               <img
                 className="h-8 w-auto"
@@ -182,7 +182,7 @@ export  function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-              <a href="/" className={`flex items-center gap-x-1 ${tub.className}  text-md font-semibold leading-6 text-gray-900 outline-none border-none tracking-widest`}>
+              <a href="/" title="Markus Kral Antiquitäten | Übersicht" className={`flex items-center gap-x-1 ${tub.className}  text-md font-semibold leading-6 text-gray-900 outline-none border-none tracking-widest`}>
               ÜBERSICHT
             </a>
                 <Disclosure as="div" className="-mx-3">
@@ -211,13 +211,13 @@ export  function Header() {
                   )}
                 </Disclosure>
 
-                <a
+                <a title="Markus Kral Antiquitäten | Wertermittlung"
                   href="/wertermittlung"
                   className={`-mx-3 block rounded-lg px-3 ${tub.className}  py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}
                 >
                   WERTERMITTLUNG
                 </a>
-                <a
+                <a title="Markus Kral Antiquitäten | Restaurierung"
                   href="/restaurierung"
                   className={`-mx-3 block rounded-lg px-3 ${tub.className} py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50`}
                 >
