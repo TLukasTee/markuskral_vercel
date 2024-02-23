@@ -71,7 +71,7 @@ export async function Footer() {
         <div className='mt-12 flex items-center justify-center md:mt-0'>
           <div className='flex space-x-8'>
             <Link
-              href='#'
+              href='/impressum'
               className='text-sm text-muted-foreground hover:text-gray-600 px-2  py-2 '>
               Impressum
             </Link>

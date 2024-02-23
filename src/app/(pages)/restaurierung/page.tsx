@@ -35,7 +35,7 @@ const features = [
   },
 ]
 
-export default async function wertermittlung() {
+export default async function restaurierung() {
   return (
     <div className="relative isolate overflow-hidden bg-white py-24 sm:py-32">
     
