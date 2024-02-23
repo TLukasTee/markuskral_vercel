@@ -415,6 +415,8 @@ export default function Home() {
                 src={Aussen}
                 alt="Markus Kral Antiquitäten | Aussenbereich"
                 className="aspect-[8/5] w-[37rem] max-w-none rounded-3xl bg-white object-cover "
+                placeholder="blur" blurDataURL="data:image/png;base64,..."
+                priority
               />
             </div>
             <div className=" contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
@@ -424,6 +426,8 @@ export default function Home() {
                   src={SchrankWV}
                   alt="Markus Kral Antiquitäten | Schrank"
                   className="aspect-[9/7] w-[23rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
+                  placeholder="blur" blurDataURL="data:image/png;base64,..."
+                  priority
                 />
               </div>
               <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none" data-aos="fade-right">
@@ -431,6 +435,8 @@ export default function Home() {
                   src={InnenRaum1}
                   alt="Markus Kral Antiquitäten | Innenbereich"
                   className="aspect-[8/7] w-[27rem] max-w-none rounded-2xl bg-gray-50 object-cover"
+                  placeholder="blur" blurDataURL="data:image/png;base64,..."
+                  priority
                 />
               </div>
               <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none" data-aos="fade-left">
@@ -438,6 +444,8 @@ export default function Home() {
                   src={WV}
                   alt="Markus Kral Antiquitäten | VW Bus"
                   className="aspect-[6/7] w-[23rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
+                  placeholder="blur" blurDataURL="data:image/png;base64,..."
+                  priority
                 />
               </div>
             </div>
