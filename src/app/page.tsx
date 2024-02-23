@@ -1,3 +1,4 @@
+'use client'
 import { Montserrat, Playfair } from "next/font/google";
 import Image from "next/image";
 import './global.css';
@@ -23,6 +24,10 @@ import Aussen from './images/Vorstellungsbilder/Aussen.svg';
 import Bares from './images/test2.svg';
 import SchrankWV from './images/Vorstellungsbilder/Schrank.svg';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
+import { useEffect } from 'react';
 
 
 import Logo1 from './images/logo/Logo (1).svg';
@@ -128,6 +133,12 @@ const testimonials = [
 
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      // hier kannst du Einstellungen vornehmen (optional)
+      duration: 1000, // Dauer der Animationen in Millisekunden
+    });
+  }, []);
   return (
     <>
     
@@ -172,7 +183,7 @@ export default function Home() {
           <div className="overflow-hidden">
             <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-28">
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-                <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
+                <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl" data-aos="fade-right">
                 <h1 className={`mx-auto max-w-4xl   mb-8 font-display ${inter.className} font-medium tracking-tight text-slate-900  lg:text-6xl  md:text-[50px]  sm:text-[41px] text-[41px]`}>
                 ANTIQUITÄTEN <br></br><span className={`relative text-red-500    ${tub.className} lg:text-7xl md:text-6xl  sm:text-5xl text-5xl  font-extralight tracking-tight`}>MARKUS KRAL </span> </h1>
                   <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
@@ -193,7 +204,7 @@ export default function Home() {
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                   <div className="ml-auto 2xl:w-44 xl:w-44 lg:w-44  md:w-44 sm:w-44  w-36 flex-none space-y-8 pt-32  sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80 ">
               
-                    <div className="relative">
+                    <div className="relative" data-aos="flip-left"  data-aos-easing="ease-out-cubic"   data-aos-duration="2000">
                       <Image
                         src={AQ_1}
                         alt="Markus Kral Antiquitäten | Schmuckstück "
@@ -203,7 +214,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="mr-auto 2xl:w-44 xl:w-44 lg:w-44  md:w-44 sm:w-44  w-36 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
-                    <div className="relative">
+                    <div className="relative" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                       <Image
                        src={AQ_6}
                        alt="Markus Kral Antiquitäten | Schmuckstück "
@@ -211,7 +222,7 @@ export default function Home() {
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
-                    <div className="relative">
+                    <div className="relative" data-aos="flip-left"  data-aos-easing="ease-out-cubic"    data-aos-duration="2000">
                       <Image
                         src={AQ_8}
                         alt="Markus Kral Antiquitäten | Schmuckstück "
@@ -221,7 +232,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className=" 2xl:w-44 xl:w-44 lg:w-44  md:w-44 sm:w-44 w-36 flex-none space-y-8 pt-32 sm:pt-0">
-                    <div className="relative">
+                    <div className="relative" data-aos="flip-left"  data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                       <Image
                         src={AQ_7}
                         alt="Markus Kral Antiquitäten | Schmuckstück "
@@ -229,7 +240,7 @@ export default function Home() {
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
-                    <div className="relative">
+                    <div className="relative" data-aos="flip-left"  data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                       <Image
                          src={AQ_4}
                          alt="Markus Kral Antiquitäten | Schmuckstück "

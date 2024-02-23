@@ -24,6 +24,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
+    "@material-tailwind/react": "^2.1.9",
     "@payloadcms/bundler-webpack": "^1.0.0",
     "@payloadcms/db-mongodb": "^1.0.0",
     "@payloadcms/plugin-cloud": "^3.0.0",
@@ -34,6 +35,7 @@
     "@payloadcms/richtext-slate": "^1.0.0",
     "@stripe/react-stripe-js": "^1.16.3",
     "@stripe/stripe-js": "^1.46.0",
+    "aos": "^3.0.0-beta.6",
     "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
     "escape-html": "^1.0.3",
@@ -45,10 +47,10 @@
     "payload-admin-bar": "^1.0.6",
     "qs": "6.11.2",
     "react": "^18.2.0",
+    "react-dom": "latest",
     "react-hook-form": "7.45.4",
     "react-icons": "^5.0.1",
     "react-router-dom": "5.3.4",
-    "react-dom": "latest",
     "resend": "latest",
     "stripe": "^10.2.0"
   },
