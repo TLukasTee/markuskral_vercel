@@ -1,4 +1,6 @@
 import React from 'react'
+import { ArrowLongRightIcon } from '@heroicons/react/24/solid'
+import { ArrowLongLeftIcon } from '@heroicons/react/24/solid'
 
 import { Chevron } from '../Chevron'
 
@@ -24,11 +26,11 @@ export const Pagination: React.FC<{
           onClick(page - 1)
         }}
       >
-        <Chevron rotate={90} className={classes.icon} />
+        <ArrowLongLeftIcon rotate={90} className="mx-5 h-6 w-auto" />
       </button>
       <div className={classes.pageRange}>
         <span className={classes.pageRangeLabel}>
-          Page {page} of {totalPages}
+          Seite {page} von {totalPages}
         </span>
       </div>
       <button
@@ -39,7 +41,7 @@ export const Pagination: React.FC<{
           onClick(page + 1)
         }}
       >
-        <Chevron rotate={-90} className={classes.icon} />
+        <ArrowLongRightIcon rotate={-90} className="mx-5 h-6 w-auto" />
       </button>
     </div>
   )

@@ -201,7 +201,7 @@ export default function Home() {
                   </div>
                 </div>
                 <a href="/schauraum"  title="Markus Kral | Schauraum">
-                <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+                <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0" data-aos="zoom-in">
                   <div className="ml-auto 2xl:w-44 xl:w-44 lg:w-44  md:w-44 sm:w-44  w-36 flex-none space-y-8 pt-32  sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80 ">
               
                     <div className="relative" data-aos="flip-left"  data-aos-easing="ease-out-cubic"   data-aos-duration="2000">
@@ -262,11 +262,11 @@ export default function Home() {
     
 
       <section className=''>
-      <div className="bg-white py-24 sm:py-32">
+      <div className="bg-white py-24 sm:py-32" data-aos="fade-up">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-4">
-            <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+            <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10" >
              
                <Image
                         src={MarkusKral}
@@ -323,7 +323,7 @@ export default function Home() {
                   
               </div>
               <div className="mt-8 flex items-center gap-4">
-                  <div className="flex-none">
+                  <div className="flex-none" data-aos="zoom-in">
                     <Image
                       src={Bares}
                       alt="Markus Kral Antiquitäten | Zu Bares für Rares"
@@ -391,10 +391,10 @@ export default function Home() {
 </section>
 
       <section> 
-      <div className="overflow-hidden bg-white py-32">
+      <div className="overflow-hidden bg-white py-32"  data-aos="zoom-in">
       <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
-          <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
+          <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8" data-aos="fade-right">
             <h3 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Willkommen in unserer Welt der Antiquitäten</h3>
             <p className="mt-6 text-lg leading-8 text-gray-600">
             <strong>   Seit 1988 </strong> sind wir stolz darauf, eine breite Palette von    <strong>    Antiquitäten </strong> anzubieten, die von Möbeln aus verschiedenen Stilepochen bis hin zu antiken Kachelöfen, Bildern, Lampen, Uhren und Kleinkunst reicht. 
@@ -410,7 +410,7 @@ export default function Home() {
            
           </div>
           <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
-            <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
+            <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end"  data-aos="fade-left">
               <Image
                 src={Aussen}
                 alt="Markus Kral Antiquitäten | Aussenbereich"
@@ -419,21 +419,21 @@ export default function Home() {
             </div>
             <div className=" contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
             
-              <div className="hidden lg:block order-first flex w-64 flex-none justify-end lg:w-auto">
+              <div className="hidden lg:block order-first flex w-64 flex-none justify-end lg:w-auto" data-aos="fade-right">
                 <Image
                   src={SchrankWV}
                   alt="Markus Kral Antiquitäten | Schrank"
                   className="aspect-[9/7] w-[23rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
                 />
               </div>
-              <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
+              <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none" data-aos="fade-right">
                 <Image
                   src={InnenRaum1}
                   alt="Markus Kral Antiquitäten | Innenbereich"
                   className="aspect-[8/7] w-[27rem] max-w-none rounded-2xl bg-gray-50 object-cover"
                 />
               </div>
-              <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
+              <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none" data-aos="fade-left">
                 <Image
                   src={WV}
                   alt="Markus Kral Antiquitäten | VW Bus"

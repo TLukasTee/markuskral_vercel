@@ -70,7 +70,7 @@ export  function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
         <a href="/" className="-m-1.5 p-1.5" title="Markus Kral | Start">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only"> Markus Kral</span>
             <Image className="h-12 w-auto" src={Logo_Red} alt="" />
           </a>
         </div>
@@ -85,14 +85,14 @@ export  function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="/" title="Markus Kral | Start" className={`flex items-center gap-x-1 ${tub.className}  text-md font-semibold leading-6 text-gray-900 outline-none border-none tracking-widest`}>
+          <a href="/" title="Markus Kral | Start" className={`flex items-center gap-x-1 ${tub.className}  text-md font-bold leading-6 text-gray-900 outline-none border-none tracking-widest`}>
               ÜBERSICHT
             </a>
 
           <Popover className="relative">
         
            
-            <Popover.Button className={`flex items-center gap-x-1 ${tub.className}  text-md font-semibold leading-6 text-gray-900 outline-none border-none tracking-widest`}>
+            <Popover.Button className={`flex items-center gap-x-1 ${tub.className}  text-md font-bold leading-6 text-gray-900 outline-none border-none tracking-widest`}>
             SCHAURAUM
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
@@ -130,7 +130,7 @@ export  function Header() {
               
                     <a title="Markus Kral Antiquitäten | Schauraum"
                         href="/schauraum"
-                      className={`relative text-red-500    ${tub.className} text-base font-semibold tracking-tight flex items-center justify-center gap-x-2.5 p-3 text-md font-semibold leading-6 text-white tracking-widest uppercase  hover:bg-red-600`}
+                      className={`relative text-red-500    ${tub.className} text-base font-semibold  flex items-center justify-center gap-x-2.5 p-3 text-md  leading-6 text-white tracking-widest uppercase  hover:bg-red-600`}
                     >
                     
                       Gesamtübersicht
@@ -142,18 +142,18 @@ export  function Header() {
           </Popover>
 
          
-          <a href="/wertermittlung" title="Markus Kral Antiquitäten | Wertermittlung" className={`flex items-center gap-x-1 ${tub.className}  text-md font-semibold leading-6 text-gray-900 outline-none border-none tracking-widest`}>
+          <a href="/wertermittlung" title="Markus Kral Antiquitäten | Wertermittlung" className={`flex items-center gap-x-1 ${tub.className}  text-md font-bold leading-6 text-gray-900 outline-none border-none tracking-widest`}>
             WERTERMITTLUNG
           </a>
 
-          <a href="/restaurierung"  title="Markus Kral Antiquitäten | Restaurierung" className={`flex items-center gap-x-1 ${tub.className}  text-md font-semibold leading-6 text-gray-900 outline-none border-none tracking-widest`}>
+          <a href="/restaurierung"  title="Markus Kral Antiquitäten | Restaurierung" className={`flex items-center gap-x-1 ${tub.className}  text-md font-bold leading-6 text-gray-900 outline-none border-none tracking-widest`}>
              RESTAURIERUNG
           </a>
 
          
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="/kontakt"  title="Markus Kral Antiquitäten | Kontakt"  className={`"tracking-widest rounded-md bg-red-600 ${tub.className} tracking-widest px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"`}>
+          <a href="/kontakt"  title="Markus Kral Antiquitäten | Kontakt"  className={`"tracking-widest rounded-md bg-red-600 ${tub.className} tracking-widest px-4 py-3 text-sm font-bold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"`}>
             KONTAKT
           </a>
         </div>
@@ -163,7 +163,7 @@ export  function Header() {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5" title="Markus Kral Antiquitäten | Mobile">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Markus KRal</span>
               <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
