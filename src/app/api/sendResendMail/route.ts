@@ -1,6 +1,8 @@
 import nodemailer from 'nodemailer';
 
 export async function POST(req, res) {
+  console.log("API Route Called"); // Print this at the very top
+
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
