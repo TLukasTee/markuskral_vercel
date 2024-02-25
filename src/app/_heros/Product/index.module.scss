@@ -64,7 +64,16 @@
 
 .image {
   object-fit: contain;
+ 
 }
+
+
+.image2 {
+  width: 100px!important;
+  height: 100px!important;
+  
+}
+
 
 .placeholder {
   background-color: var(--theme-elevation-50);
@@ -81,4 +90,16 @@
 
 .addToCartButton {
   margin-top: calc(var(--base) / 2);
+}
+
+
+.outer-wrapper {
+  /* Anpassen der Positionierung und Größe nach Bedarf */
+  position: relative;
+  width: 100%; /* Oder eine spezifische Breite */
+  height: auto; /* Oder eine spezifische Höhe */
+}
+
+.div-container {
+  position: relative;
 }

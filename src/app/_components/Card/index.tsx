@@ -32,6 +32,15 @@ const priceFromJSON = (priceJSON): string => {
 
   return price
 }
+const SkeletonLoader = () => (
+  <div className="animate-pulse">
+    <div className="bg-gray-300 h-72 w-full rounded-2xl"></div>
+    <div className="mt-4 space-y-3">
+      <div className="h-4 bg-gray-300 rounded"></div>
+      <div className="h-4 bg-gray-300 rounded w-5/6"></div>
+    </div>
+  </div>
+);
 
 export const Card: React.FC<{
   alignItems?: 'center'
@@ -65,7 +74,16 @@ export const Card: React.FC<{
   useEffect(() => {
     setPrice(priceFromJSON(priceJSON))
   }, [priceJSON])
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    // Hier simulieren wir das Laden der Daten
+    const timer = setTimeout(() => setLoading(false), 2000); // 2 Sekunden Ladezeit
+    return () => clearTimeout(timer);
+  }, []);
 
+  if (loading) {
+    return <SkeletonLoader />;
+  }
   return (
     
     <div key="{product.id}">
@@ -101,7 +119,7 @@ export const Card: React.FC<{
     <div className="mt-6">
     <a
         href={href}
-        className="relative flex items-center justify-center rounded-md border border-transparent bg-gray-400 text-white px-8 py-2 text-sm font-medium text-gray-900 hover:bg-gray-500"
+        className="relative flex items-center justify-center rounded-md border border-transparent bg-red-600 text-white px-8 py-2 text-sm font-bold  hover:bg-red-500"
       >
        Objekt betrachten <span className="sr-only"> </span>
       </a>

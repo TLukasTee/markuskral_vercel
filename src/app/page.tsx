@@ -6,12 +6,10 @@ import './global.css';
 import AQ_2 from './images/hero_antiqs/AQ_.svg';
 import AQ_3 from './images/hero_antiqs/AQ_Gemaelde.svg';
 import AQ_4 from './images/hero_antiqs/AQ_Geschirr.svg';
-import AQ_1 from '../../public/images/AQ (1).png';
+import AQ_1 from './images/hero_antiqs/AQ_Uhr.svg';
 import AQ_6 from './images/hero_antiqs/AQ_Gemaelde3.svg';
 import AQ_7 from './images/hero_antiqs/AQ_Uhr2.svg';
 import AQ_8 from './images/hero_antiqs/AQ_Moebel2.svg';
-
-
 import AQ_5 from './images/hero_antiqs/AQ_Uhrenstatue.svg';
 
 import logoEbay from './images/logo/Logo (3).svg';
