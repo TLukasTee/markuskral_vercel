@@ -6,15 +6,18 @@ import './global.css';
 import AQ_2 from './images/hero_antiqs/AQ_.svg';
 import AQ_3 from './images/hero_antiqs/AQ_Gemaelde.svg';
 import AQ_4 from './images/hero_antiqs/AQ_Geschirr.svg';
-import AQ_1 from './images/hero_antiqs/AQ_Uhr.svg';
-import AQ_5 from './images/hero_antiqs/AQ_Uhrenstatue.svg';
+import AQ_1 from '../../public/images/AQ (1).png';
 import AQ_6 from './images/hero_antiqs/AQ_Gemaelde3.svg';
 import AQ_7 from './images/hero_antiqs/AQ_Uhr2.svg';
 import AQ_8 from './images/hero_antiqs/AQ_Moebel2.svg';
+
+
+import AQ_5 from './images/hero_antiqs/AQ_Uhrenstatue.svg';
+
 import logoEbay from './images/logo/Logo (3).svg';
 import logoWillhaben from './images/logo/Logo (1).svg';
 import logoPorc from './images/logo/Logo (4).svg';
-import MarkusKral from './images/MArkusKrala.svg';
+import MarkusKral from '../../public/images/MarkusKral.webp';
 import InnenRaum1 from './images/Vorstellungsbilder/InnenRaum1.svg';
 import InnenRaum2 from './images/Vorstellungsbilder/InnenRaum2.svg';
 import InnenRaum3 from './images/Vorstellungsbilder/InnenRaum3.svg';
@@ -268,10 +271,13 @@ export default function Home() {
           <div className="lg:pr-4">
             <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10" >
              
-               <Image
-                        src={MarkusKral}
+               <img
+                        src="/images/MarkusKral.webp"
                         alt="Markus Kral Antiquitäten | Markus Kral"
                         className="absolute inset-0 h-full w-full object-cover "
+                   
+                        width={500} 
+                        height={300}
                       />
               <div className="absolute inset-0 bg-gray-50 mix-blend-multiply" />
               <div

@@ -197,14 +197,14 @@ export const CollectionArchive: React.FC<Props> = props => {
             return null
           })}
         </div>
-        {results.totalPages > 1 && populateBy !== 'selection' && (
+        
           <Pagination
             className={classes.pagination}
             onClick={setPage}
             page={results.page}
             totalPages={results.totalPages}
           />
-        )}
+       
       </Gutter>
     </Fragment>
   </div>
