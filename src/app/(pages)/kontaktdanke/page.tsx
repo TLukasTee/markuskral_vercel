@@ -4,10 +4,6 @@ import { BookOpenIcon, CurrencyEuroIcon, MagnifyingGlassIcon, ScaleIcon } from '
 import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import { Montserrat, Playfair } from "next/font/google";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-
-import { useEffect } from 'react';
 
 const inter = Montserrat({  weight: '400',
 subsets: ['latin'], });
@@ -43,16 +39,11 @@ const features = [
 ]
 
 export default async function kontakt() {
-  useEffect(() => {
-    AOS.init({
-      // hier kannst du Einstellungen vornehmen (optional)
-      duration: 1000, // Dauer der Animationen in Millisekunden
-    });
-  }, []);
+  
   return (
     
 
-    <div className="relative isolate bg-white mt-24" data-aos="fade-right">
+    <div className="relative isolate bg-white mt-24" >
     <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
       <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
         <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-full">

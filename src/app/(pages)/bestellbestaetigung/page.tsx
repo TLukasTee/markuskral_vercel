@@ -4,10 +4,7 @@ import { BookOpenIcon, CurrencyEuroIcon, MagnifyingGlassIcon, ScaleIcon } from '
 import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import { Montserrat, Playfair } from "next/font/google";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
 
-import { useEffect } from 'react';
 
 const inter = Montserrat({  weight: '400',
 subsets: ['latin'], });
@@ -43,12 +40,7 @@ const features = [
 ]
 
 export default async function bestellbestaetigung() {
-  useEffect(() => {
-    AOS.init({
-      // hier kannst du Einstellungen vornehmen (optional)
-      duration: 500, // Dauer der Animationen in Millisekunden
-    });
-  }, []);
+  
   return (
     
 

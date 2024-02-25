@@ -5,11 +5,16 @@ import './global.css';
 
 import AQ_2 from './images/hero_antiqs/AQ_.svg';
 import AQ_3 from './images/hero_antiqs/AQ_Gemaelde.svg';
+
+
 import AQ_4 from './images/hero_antiqs/AQ_Geschirr.svg';
+
 import AQ_1 from './images/hero_antiqs/AQ_Uhr.svg';
 import AQ_6 from './images/hero_antiqs/AQ_Gemaelde3.svg';
 import AQ_7 from './images/hero_antiqs/AQ_Uhr2.svg';
 import AQ_8 from './images/hero_antiqs/AQ_Moebel2.svg';
+
+
 import AQ_5 from './images/hero_antiqs/AQ_Uhrenstatue.svg';
 
 import logoEbay from './images/logo/Logo (3).svg';
@@ -206,46 +211,56 @@ export default function Home() {
                   <div className="ml-auto 2xl:w-44 xl:w-44 lg:w-44  md:w-44 sm:w-44  w-36 flex-none space-y-8 pt-32  sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80 ">
               
                     <div className="relative" data-aos="flip-left"  data-aos-easing="ease-out-cubic"   data-aos-duration="2000">
-                      <Image
-                        src={AQ_1}
+                      <img
+                        src="/images/AQ_Uhr.webp"
+                        width={200}
+                        height={200}
                         alt="Markus Kral Antiquitäten | Schmuckstück "
-                        className="aspect-[2/3] w-full rounded-xl bg-neutral-50  object-fit p-5 shadow-lg"
+                        className="w-full rounded-xl  bg-neutral-50/20   object-fit p-5 shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                   </div>
                   <div className="mr-auto 2xl:w-44 xl:w-44 lg:w-44  md:w-44 sm:w-44  w-36 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                     <div className="relative" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                      <Image
-                       src={AQ_6}
-                       alt="Markus Kral Antiquitäten | Schmuckstück "
-                        className="aspect-[2/3] w-full rounded-xl bg-neutral-100 object-fit p-3 shadow-lg"
+                    <img
+                        src="/images/AQ_Gemaelde.webp"
+                        width={200}
+                        height={200}
+                        alt="Markus Kral Antiquitäten | Schmuckstück "
+                        className="w-full rounded-xl  bg-neutral-50/20   object-fit p-5 shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                     <div className="relative" data-aos="flip-left"  data-aos-easing="ease-out-cubic"    data-aos-duration="2000">
-                      <Image
-                        src={AQ_8}
+                    <img
+                        src="/images/AQ_Moebel2.webp"
+                        width={200}
+                        height={200}
                         alt="Markus Kral Antiquitäten | Schmuckstück "
-                        className="aspect-[2/3] w-full rounded-xl  bg-neutral-100 object-fit p-0 shadow-lg"
+                        className="w-full rounded-xl  bg-neutral-50/20  px-2 py-10 object-fit  shadow-lg"
                       />
-                      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                      <div className="pointer-events-none absolute inset-0 rounded-xl ring-1  ring-inset ring-gray-900/10" />
                     </div>
                   </div>
                   <div className=" 2xl:w-44 xl:w-44 lg:w-44  md:w-44 sm:w-44 w-36 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative" data-aos="flip-left"  data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                      <Image
-                        src={AQ_7}
+                    <img
+                        src="/images/AQ_Uhr2.webp"
+                        width={200}
+                        height={200}
                         alt="Markus Kral Antiquitäten | Schmuckstück "
-                        className="aspect-[2/3] w-full rounded-xl  bg-neutral-100 object-fit p-2 shadow-lg"
+                        className="w-full rounded-xl bg-neutral-50/20   object-fit p-5 shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                     <div className="relative" data-aos="flip-left"  data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                      <Image
-                         src={AQ_4}
-                         alt="Markus Kral Antiquitäten | Schmuckstück "
-                        className="aspect-[2/3] w-full rounded-xl  bg-neutral-100 object-fit  p-2 shadow-lg"
+                    <img
+                        src="/images/AQ_Geschirr.webp"
+                        width={200}
+                        height={200}
+                        alt="Markus Kral Antiquitäten | Schmuckstück "
+                        className="w-full rounded-xl bg-neutral-50/20   object-fit p-5 shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
