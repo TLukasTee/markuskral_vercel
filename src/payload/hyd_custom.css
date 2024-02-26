@@ -753,3 +753,29 @@ button {
 .upload__toggler .btn {
   color: white !important;
 }
+
+.relationship-add-new__add-button {
+  visibility: hidden;
+}
+
+.rs__control css-13cymwt-control {
+  visibility: hidden;
+}
+
+
+.drawer__content-children {
+
+  background-color: white;
+  
+}
+
+.doc-drawer__header h2 {
+  color: rgb(220 38 38)!important;
+}
+
+
+
+.doc-drawer__header button {
+  background-color: black;
+}
+

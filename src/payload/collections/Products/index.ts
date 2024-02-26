@@ -33,7 +33,6 @@ const Products: CollectionConfig = {
     beforeChange: [beforeProductChange],
     afterChange: [revalidateProduct],
     afterRead: [populateArchiveBlock],
-    afterDelete: [deleteProductFromCarts],
   },
   versions: {
     drafts: true,
@@ -55,16 +54,21 @@ const Products: CollectionConfig = {
       
     },
     {
-      name: 'title2',
-      label: 'Aus welchem Jahr ist das Objekt? ( z.B.: 1641 )',
-      type: 'text',
-      required: true,
+      name: 'categories',
+      type: 'relationship',
+      label: 'Kategorien',
+      relationTo: 'categories',
+      hasMany: true,
+      admin: {
+        position: 'sidebar',
+      },
     },
     {
       name: 'relatedProducts',
       label: 'Ähnliche Objekte: ( z.B.: "Weiteres Gemälde von Albrecht Dürer" )',
       type: 'relationship',
       relationTo: 'products',
+      hidden: true,
       hasMany: true,
       filterOptions: ({ id }) => {
         return {
@@ -148,16 +152,7 @@ const Products: CollectionConfig = {
         },
       ],
     },
-    {
-      name: 'categories',
-      type: 'relationship',
-      label: 'Kategorien',
-      relationTo: 'categories',
-      hasMany: true,
-      admin: {
-        position: 'sidebar',
-      },
-    },
+ 
     
     slugField(),
     {
