@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sideover-open {
+    z-index: 1000; /* Stelle sicher, dass dieser Wert höher ist als der des Footers, aber niedriger als der des Sideover */
+  }
+
+  .sideover {
+    z-index: 1050; /* Höher als .sideover-open */
+  }

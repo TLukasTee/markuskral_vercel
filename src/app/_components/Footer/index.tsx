@@ -20,7 +20,7 @@ export async function Footer() {
   const navItems = footer?.navItems || []
 
   return (
-    <footer className=' flex-grow-0'>
+    <footer className=' flex-grow-0 z-0'>
     <MaxWidthWrapper>
       <div className='border-t'>
      

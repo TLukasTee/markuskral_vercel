@@ -35,12 +35,16 @@ export const ProductHero: React.FC<{
   // Funktion, um das Sideover zu öffnen
   const handleOpenSideover = () => {
     setIsSideoverOpen(true);
+    document.body.classList.add('sideover-open');
+
     document.body.style.overflow = 'hidden';
   };
 
   // Funktion, um das Sideover zu schließen
   const handleCloseSideover = () => {
     setIsSideoverOpen(false);
+    document.body.classList.remove('sideover-open');
+
     document.body.style.overflow = 'visible';
   };
 
@@ -152,7 +156,7 @@ if (phoneInput) {
        </div>
      </div>
      {isSideoverOpen && (
-          <div className="fixed inset-0 overflow-hidden">
+          <div className="fixed inset-0 overflow-hidden z-10">
             <div className="absolute inset-0 overflow-hidden">
               {/* Hintergrundoverlay */}
               <div
@@ -170,26 +174,27 @@ if (phoneInput) {
                     
                        
                        
-                        <div className="ml-3 h-7 flex items-center">
+                        <div className="my-6 ml-3 h-4 flex items-center">
                           <button
                             onClick={handleCloseSideover}
                             className="bg-white rounded-md text-gray-400 hover:text-gray-500 px-4 py-2 hover:bg-red-500 hover:text-white"
                           >
                          
                             {/* Hier Icon für Schließen einfügen oder Text verwenden */}
-                            Bestellung abrechen
+                            X
                           </button>
                         </div>
                       </div>
                       <div className='flex justify-center'>
-                        <h1 className={`   mb-8 font-display ${inter.className} font-medium tracking-tight text-slate-900  lg:text-4xl  md:text-[20px]  sm:text-[41px] text-[41px]`}>
-                        ANTIQUITÄTEN <br></br><span className={`relative text-red-500    ${tub.className} lg:text-[42px] md:text-4xl  sm:text-5xl text-5xl  font-extralight tracking-tight`}>MARKUS KRAL </span> </h1>
+                        <h1 className={`   mb-8 font-display ${inter.className} font-medium tracking-tight text-slate-900  lg:text-4xl  md:text-[20px]  sm:text-[41px] text-[31px]`}>
+                        ANTIQUITÄTEN <br></br><span className={`relative text-red-500    ${tub.className} lg:text-[42px] md:text-4xl  sm:text-5xl text-4xl  font-extralight tracking-tight`}>MARKUS KRAL </span> </h1>
                                   
                            </div>
-                           <h2 className="flex justify-center text-lg">
-                          Bestellanfrage für das Objekt <strong className='mx-1'>  {product.title}   </strong>
-                        </h2>
-                        
+                           <div className="text-center justify-center lg:text-lg md:text-base sm:text-sm test-sm ">
+                         <div>  Bestellanfrage für das Objekt  </div>
+                          <div className='mx-1 font-bold'>  {product.title}   </div>
+                        </div>
+                     
                        
                         <div className="bg-gray-100">
       <div className="mx-auto max-w-2xl px-4 pb-24 pt-16 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -433,6 +438,7 @@ if (phoneInput) {
 */
 import { RadioGroup } from '@headlessui/react'
 import { CheckCircleIcon, TrashIcon } from '@heroicons/react/20/solid'
+import { global } from 'styled-jsx/css'
 
 const products = [
   {

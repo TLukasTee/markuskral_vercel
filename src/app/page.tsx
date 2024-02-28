@@ -192,9 +192,11 @@ export default function Home() {
                 <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl" data-aos="fade-right">
                 <h1 className={`mx-auto max-w-4xl   mb-8 font-display ${inter.className} font-medium tracking-tight text-slate-900  lg:text-6xl  md:text-[50px]  sm:text-[41px] text-[41px]`}>
                 ANTIQUITÄTEN <br></br><span className={`relative text-red-500    ${tub.className} lg:text-7xl md:text-6xl  sm:text-5xl text-5xl  font-extralight tracking-tight`}>MARKUS KRAL </span> </h1>
+                
                   <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
                   Stöbern Sie in unseren einzigartigen Sammlungen von Antiquitäten aus verschiedenen Epochen und Stilen.
                   </p>
+                 
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
                       href="/schauraum"
@@ -205,7 +207,9 @@ export default function Home() {
                     </a>
                     
                   </div>
+                 
                 </div>
+             
                 <a href="/schauraum"  title="Markus Kral | Schauraum">
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0" data-aos="zoom-in">
                   <div className="ml-auto 2xl:w-44 xl:w-44 lg:w-44  md:w-44 sm:w-44  w-36 flex-none space-y-8 pt-32  sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80 ">
@@ -368,44 +372,6 @@ export default function Home() {
 
 
 
-<div className="bg-red-800 py-24 sm:py-12">
-  <div className="mx-auto max-w-7xl px-6 lg:px-8">
-    <h2 className="text-center text-lg font-semibold leading-8 text-white">
-      Unsere Antiquitaeten finden Sie auch hier!
-    </h2>
-    <div className="mx-auto mt-10 grid max-w-lg grid-cols-3 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">
-     <a   title="Markus Kral | Zu Ebay"  href="https://www.ebay.at/str/antikesmarkuskral"> 
-      <Image
-    
-        className="col-span-2 max-h-20 w-full object-contain lg:col-span-1  tranis transition grayscale hover:grayscale-0 duration-150 hover:duration-150 ease-in-out"
-        src={logoEbay}
-        alt="Markus Kral Antiquitäten | Zu Ebay"
-    
-      />
-      </a>
-      <a   title="Markus Kral | Zu Willhaben" href="https://www.willhaben.at/iad/kaufen-und-verkaufen/webshop/marktplatz?orgId=26755305"> 
-      <Image
-    
-        className="col-span-2 max-h-20 w-full object-contain lg:col-span-1 grayscale hover:grayscale-0 duration-150 hover:duration-150 ease-in-out"
-        src={logoWillhaben}
-        alt="Markus Kral Antiquitäten | Zu Willhaben"
-
-     
-      />
-      </a>
-      <a   title="Markus Kral | Zu Proantic"  href="https://www.proantic.com/en/galerie/antiquitaten-markus-kral/"> 
-      <Image
-    
-        className="col-span-2 max-h-20 w-full object-contain lg:col-span-1 grayscale hover:grayscale-0 duration-150 hover:duration-150 ease-in-out"
-        src={logoPorc}
-        alt="Markus Kral Antiquitäten | Zu Proantic"
-   
-      />
-      </a>
-     
-    </div>
-  </div>
-</div>
 
 </section>
 
@@ -424,10 +390,22 @@ export default function Home() {
             <p className="mt-6 text-lg leading-7 text-gray-600">
             Mit einer  Ausstellungsfläche von   <strong>  2000 Quadratmetern </strong>  bieten wir
              unseren Kunden ein inspirierendes Erlebnis, bei dem sie echte Schätze entdecken können.
+             Diese können Sie auch auf folgenden Plattformen finden:
 
             </p>
-           
+            <div className="mt-12">
+                 <a target="_blank" href="https://www.willhaben.at/iad/kaufen-und-verkaufen/webshop/marktplatz?orgId=26755305" className="mt-12 py-2 lg:px-5 mr-2 sm:px-4 px-3 bg-red-600 text-white  rounded-2xl text-base "> 
+                    Willhaben
+                  </a> 
+                  <a target="_blank"  href="https://www.ebay.at/str/antikesmarkuskral" className="mt-12 py-2 lg:px-5 mx-2 sm:px-4 px-3 bg-red-600  text-white rounded-2xl text-base "> 
+                    Ebay
+                  </a> 
+                  <a target="_blank"  href="https://www.proantic.com/en/galerie/antiquitaten-markus-kral/" className="mt-12 py-2 lg:px-5 mx-2 sm:px-4 px-3 bg-red-600  text-white rounded-2xl text-base "> 
+                    Proantic
+                  </a> 
+                  </div> 
           </div>
+        
           <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
             <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end"  data-aos="fade-left">
               <Image
