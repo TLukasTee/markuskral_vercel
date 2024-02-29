@@ -191,6 +191,9 @@ export interface Category {
 export interface Product {
   id: string
   title: string
+  price: string 
+ 
+  image?: string | Media | null
   publishedOn?: string | null
   layout: (
     | {

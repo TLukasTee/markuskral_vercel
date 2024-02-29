@@ -9,7 +9,7 @@ export const slugField: Slug = (fieldToUse = 'title', overrides = {}) =>
   deepMerge<Field, Partial<Field>>(
     {
       name: 'slug',
-      label: 'Slug',
+      label: 'Seitenname',
       type: 'text',
       index: true,
       admin: {

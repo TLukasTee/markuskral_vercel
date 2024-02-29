@@ -327,22 +327,9 @@
   border: 1px solid black;
 }
 
-#field-slug {
-  visibility: hidden;
-}
 
-label[for=field-slug] {
-  visibility: hidden;
-}
 
-.date-time-field__input-wrapper {
 
-  visibility: hidden;
-}
-
-label[for=publishedOn] {
-  visibility: hidden;
-}
 
 
 .collection-edit__form {
@@ -389,7 +376,7 @@ table {
 }
 
 
-.render-fields  #field-title, #field-title2, .textarea-element {
+.render-fields  #field-title, #field-price,  .textarea-element {
   background-color: white;
   color: black;
 }
@@ -626,9 +613,7 @@ button {
   border: 1px solid black !important;
 }
 
-#field-slug, label[for=field-slug], .date-time-field__input-wrapper, label[for=publishedOn] {
-  visibility: hidden !important;
-}
+
 
 .collection-edit__form {
   margin-top: 50px !important;
@@ -708,7 +693,15 @@ label[for=field-alt] {
   color: white!important;
 }
 
-
+label[for=field-caption] {
+    visibility: hidden;
+  }
+  
+label[for=field-alt] {
+    color: black!important;
+  }
+  
+  
 
 .btn__content .btn__label {
 
@@ -777,5 +770,31 @@ button {
 
 .doc-drawer__header button {
   background-color: black;
+}
+
+input {
+    border-radius: 15px!important;
+    visibility: visible;
+}
+
+label {
+    font-size: 20px!important;
+    margin-bottom: 5px!important;
+    border-radius: 15px!important;
+    visibility: visible;
+    font-family: 'Montserrat', serif;
+}
+
+.thumbnail  {
+    border-radius: 15px!important;
+}
+
+button {
+    color: white!important;
+    font-family: 'Montserrat', serif;
+}
+
+.relationship-add-new__add-button {
+    visibility: hidden!important;
 }
 

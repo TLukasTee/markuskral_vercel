@@ -22,13 +22,14 @@ const Products: CollectionConfig = {
   },
   admin: {
     useAsTitle: 'title',
-    defaultColumns: ['title', 'stripeProductID', '_status'],
+    defaultColumns: ['title', 'stripeProductID', '_status', 'price'],
     preview: doc => {
       return `${process.env.PAYLOAD_PUBLIC_SERVER_URL}/api/preview?url=${encodeURIComponent(
         `${process.env.PAYLOAD_PUBLIC_SERVER_URL}/products/${doc.slug}`,
       )}&secret=${process.env.PAYLOAD_PUBLIC_DRAFT_SECRET}`
     },
   },
+  
   hooks: {
     beforeChange: [beforeProductChange],
     afterChange: [revalidateProduct],
@@ -48,11 +49,19 @@ const Products: CollectionConfig = {
   fields: [
     {
       name: 'title',
-      label: 'Name der Antiquität',
+      label: 'Name des Objekts',
       type: 'text',
       required: true,
       
     },
+    {
+      name: 'price',
+      label: 'Preis',
+      type: 'text',
+      required: false,
+      
+    },
+   
     {
       name: 'categories',
       type: 'relationship',
@@ -86,20 +95,7 @@ const Products: CollectionConfig = {
       required: false,
       blocks: [CallToAction, Content, MediaBlock, Archive],
     },
-    {
-      name: 'publishedOn',
-      type: 'date',
-      admin: {
-        position: 'sidebar',
-        date: {
-          pickerAppearance: 'dayAndTime',
-        },
-      },
-      
-      hooks: {
-       
-      },
-    },
+    
     {
       type: 'tabs',
       hidden: true,

@@ -1,5 +1,5 @@
 'use client'
-import React, { Fragment, useState  } from 'react'
+import React, { Fragment, useState, useEffect  } from 'react'
 import Link from 'next/link'
 
 import { Product } from '../../../payload/payload-types'
@@ -28,8 +28,10 @@ export const ProductHero: React.FC<{
     stripeProductID,
     title,
     categories,
+    price,
     meta: { image: metaImage, description } = {},
   } = product
+
   const [isSideoverOpen, setIsSideoverOpen] = useState(false);
 
   // Funktion, um das Sideover zu öffnen
@@ -47,25 +49,28 @@ export const ProductHero: React.FC<{
 
     document.body.style.overflow = 'visible';
   };
+  useEffect(() => {
+    const phoneInput = document.getElementById('phone');
+    if (phoneInput) {
+      // Hier wird das Type Casting verwendet, um den Typ von phoneInput zu HTMLInputElement zu spezifizieren
+      (phoneInput as HTMLInputElement).addEventListener('input', function(e) {
+        // Das Event-Target wird auch zu HTMLInputElement gecastet
+        const target = e.target as HTMLInputElement;
 
-  const phoneInput = document.getElementById('phone');
-if (phoneInput) {
-  (phoneInput as HTMLInputElement).addEventListener('input', function(e) {
-    const target = e.target as HTMLInputElement;
+        var value = target.value;
+        // Regex für ein spezifisches Telefonnummernformat
+        var pattern = /\+(49|43|41)\s?[1-9][0-9\s\-]{5,}/;
 
-    var value = target.value;
-    var pattern = /\+(49|43|41)\s?[1-9][0-9\s\-]{5,}/; // Beispiel für ein deutsches Telefonnummernformat
-  
-    if (!pattern.test(value)) {
-      target.setCustomValidity("Bitte eine gültige deutsche Telefonnummer eingeben. Beispiel: +49 123 456789");
+        if (!pattern.test(value)) {
+          target.setCustomValidity("Bitte eine gültige deutsche Telefonnummer eingeben. Beispiel: +49 123 456789");
+        } else {
+          target.setCustomValidity("");
+        }
+      });
     } else {
-      target.setCustomValidity("");
+      console.error('Das Element mit der ID "phone" wurde nicht gefunden.');
     }
-  });
-} else {
-  console.error('Das Element mit der ID "phone" wurde nicht gefunden.');
-}
-
+  }, []); // [] so
 
   return (
 
@@ -116,24 +121,28 @@ if (phoneInput) {
                    return null
                  })}
                </div>
-               <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl mt-2"> {title}</h1>
+               <h1 className="text-3xl font-bold tracking-tight text-gray-900">{title}</h1>
+               <p  className="text-lg font-bold tracking-tight text-gray-900 sm:text-base mt-2">
+             {`${description ? `${description} ` : ''}`}
+            
+           </p>
+              <div className="mt-3">
+
+                <p className="text-2xl tracking-tight text-gray-900"> {price ? `${price} €` : 'Preis auf Anfrage'}</p>
+              </div>
+
+             
+             
 
 
              </div>
 
-             <div>
-               <h3 className="sr-only">Reviews</h3>
-
-               <p className="sr-only">2 out of 5 stars</p>
-             </div>
+           
            </div>
 
-           <p className={classes.description}>
-             {`${description ? `${description} ` : ''}`}
+         
 
-           </p>
-
-
+           <p className="text-black"> </p> 
 
            <div className="text-xl tracking-tight text-gray-900 hidden"> <Price product={product} button={false} /></div>
 
@@ -144,7 +153,7 @@ if (phoneInput) {
             className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-600 px-8 py-3 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50"
             onClick={handleOpenSideover}
           >
-            Anfragen
+            Anfragen  
           </button>
         </div>
 
@@ -440,19 +449,7 @@ import { RadioGroup } from '@headlessui/react'
 import { CheckCircleIcon, TrashIcon } from '@heroicons/react/20/solid'
 import { global } from 'styled-jsx/css'
 
-const products = [
-  {
-    id: 1,
-    title: 'Basic Tee',
-    href: '#',
-    price: '$32.00',
-    color: 'Black',
-    size: 'Large',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/checkout-page-02-product-01.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
-  },
-  // More products...
-]
+
 const deliveryMethods = [
   { id: 1, title: 'Standard', turnaround: '4–10 business days', price: '$5.00' },
   { id: 2, title: 'Express', turnaround: '2–5 business days', price: '$16.00' },
