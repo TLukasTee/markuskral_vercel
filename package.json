@@ -1,5 +1,5 @@
 {
-  "name": "@payloadcms/template-ecommerce",
+  "name": "ecommerce_deploy",
   "description": "E-commerce template for Payload",
   "version": "1.0.0",
   "main": "dist/server.js",
@@ -10,10 +10,10 @@
     "seed": "rm -rf media && cross-env PAYLOAD_SEED=true PAYLOAD_DROP_DATABASE=true PAYLOAD_CONFIG_PATH=src/payload/payload.config.ts ts-node src/server.ts",
     "build:payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload/payload.config.ts payload build",
     "build:server": "tsc --project tsconfig.server.json",
-    "build:next": "cross-env PAYLOAD_CONFIG_PATH=dist/payload/payload.config.js NEXT_BUILD=true node dist/server.js",
-    "build": "cross-env NODE_ENV=production yarn build:payload && yarn build:server && yarn copyfiles && yarn build:next",
+    "build:next": "next build",
+    "build": "cross-env NODE_ENV=production npm run build:payload && npm run build:server && npm run copyfiles && npm run build:next",
     "serve": "cross-env PAYLOAD_CONFIG_PATH=dist/payload/payload.config.js NODE_ENV=production node dist/server.js",
-    "eject": "yarn remove next react react-dom @next/eslint-plugin-next && ts-node eject.ts",
+    "eject": "npm remove next react react-dom @next/eslint-plugin-next && ts-node eject.ts",
     "copyfiles": "copyfiles -u 1 \"src/**/*.{html,css,scss,ttf,woff,woff2,eot,svg,jpg,png,js}\" dist/",
     "generate:types": "cross-env PAYLOAD_CONFIG_PATH=src/payload/payload.config.ts payload generate:types",
     "generate:graphQLSchema": "PAYLOAD_CONFIG_PATH=src/payload/payload.config.ts payload generate:graphQLSchema",
@@ -35,14 +35,14 @@
     "@payloadcms/richtext-slate": "^1.0.0",
     "@stripe/react-stripe-js": "^1.16.3",
     "@stripe/stripe-js": "^1.46.0",
-    "aos": "^3.0.0-beta.6",
     "cross-env": "^7.0.3",
-    "dotenv": "^8.2.0",
-    "escape-html": "^1.0.3",
-    "express": "^4.17.1",
-    "next": "13.5.2",
+    "aos": "^3.0.0-beta.6",
     "next-sitemap": "^4.2.3",
     "nodemailer": "^6.9.10",
+    "dotenv": "^8.2.0",
+    "escape-html": "^1.0.3",
+    "express": "^4.19.2",
+    "next": "^13.5.2",
     "payload": "^2.0.7",
     "payload-admin-bar": "^1.0.6",
     "qs": "6.11.2",
@@ -85,5 +85,4 @@
   },
   "resolutions": {
     "jackspeak": "2.1.1"
-  }
 }
