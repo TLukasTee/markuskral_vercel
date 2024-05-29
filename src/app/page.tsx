@@ -216,7 +216,7 @@ export default function Home() {
               
                     <div className="relative" data-aos="flip-left"  data-aos-easing="ease-out-cubic"   data-aos-duration="2000">
                       <img
-                        src="/images/AQ_Uhr.webp"
+                        src="public\images\AQ_Uhr2.webp"
                         width={200}
                         height={200}
                         alt="Markus Kral Antiquitäten | Schmuckstück "
