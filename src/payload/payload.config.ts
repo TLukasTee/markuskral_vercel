@@ -10,6 +10,7 @@ import { slateEditor } from '@payloadcms/richtext-slate'; // editor-import
 import dotenv from 'dotenv';
 import path from 'path';
 import { buildConfig } from 'payload/config';
+import { s3Adapter } from '@payloadcms/plugin-cloud-storage/s3'
 
 import Categories from './collections/Categories';
 import { Media } from './collections/Media';
@@ -34,8 +35,20 @@ import { Settings } from './globals/Settings';
 import { priceUpdated } from './stripe/webhooks/priceUpdated';
 import { productUpdated } from './stripe/webhooks/productUpdated';
 import adminexc from './components/adminexc';
+import { cloudStorage } from '@payloadcms/plugin-cloud-storage';
 
 
+const adapter = s3Adapter({  
+  config: {
+  credentials: {
+    accessKeyId: process.env.S3_ACCESS_KEY_ID,
+    secretAccessKey: process.env.S3_SECRET_ACCESS_KEY,
+  },
+  region: process.env.S3_REGION,
+  // ... Other S3 configuration
+},
+bucket: process.env.S3_BUCKET,
+})
 
 const generateTitle: GenerateTitle = () => {
   return 'Markus Kral'
@@ -145,6 +158,13 @@ export default buildConfig({
     },
   ],
   plugins: [
+    cloudStorage({
+      collections: {
+        'media': {
+          adapter: adapter, // see docs for the adapter you want to use
+        },
+      },
+    }),
     stripePlugin({
       stripeSecretKey: process.env.STRIPE_SECRET_KEY || '',
       isTestKey: Boolean(process.env.PAYLOAD_PUBLIC_STRIPE_IS_TEST_KEY),
