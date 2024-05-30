@@ -6,14 +6,9 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    remotePatterns: [
-      {
-          protocol: 'https',
-          hostname: 'markuskral.s3.eu-north-1.amazonaws.com',
-          port: '',
-          pathname: '',
-      },
-  ],
+    domains: ['localhost', process.env.NEXT_PUBLIC_SERVER_URL]
+      .filter(Boolean)
+      .map(url => url.replace(/https?:\/\//, '')),
   },
   redirects,
   async headers() {
