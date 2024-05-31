@@ -4,7 +4,7 @@ FROM base as builder
 
 WORKDIR /home/node/app
 COPY package*.json ./
-COPY --from=builder /home/node/app/next.config.js ./
+COPY next.config.js ./
 COPY . .
 RUN npm install
 RUN npm run build
