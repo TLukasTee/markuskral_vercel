@@ -4,7 +4,7 @@ FROM base as builder
 
 WORKDIR /home/node/app
 COPY package*.json ./
-
+COPY --from=builder /home/node/app/next.config.js ./
 COPY . .
 RUN npm install
 RUN npm run build
@@ -23,7 +23,6 @@ COPY --from=builder /home/node/app/dist ./dist
 COPY --from=builder /home/node/app/build ./build
 COPY --from=builder /home/node/app/.next ./.next
 COPY --from=builder /home/node/app/public ./public
-COPY --from=builder /home/node/app/next.config.js ./
 EXPOSE 3000
 
 CMD ["node", "dist/server.js"]
