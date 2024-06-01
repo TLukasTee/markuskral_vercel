@@ -40,7 +40,7 @@ const SkeletonLoader = () => (
       <div className="h-4 bg-gray-300 rounded w-5/6"></div>
     </div>
   </div>
-);
+)
 
 export const Card: React.FC<{
   alignItems?: 'center'
@@ -74,57 +74,58 @@ export const Card: React.FC<{
   useEffect(() => {
     setPrice(priceFromJSON(priceJSON))
   }, [priceJSON])
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true)
   useEffect(() => {
     // Hier simulieren wir das Laden der Daten
-    const timer = setTimeout(() => setLoading(false), 2000); // 2 Sekunden Ladezeit
-    return () => clearTimeout(timer);
-  }, []);
+    const timer = setTimeout(() => setLoading(false), 2000) // 2 Sekunden Ladezeit
+    return () => clearTimeout(timer)
+  }, [])
 
   if (loading) {
-    return <SkeletonLoader />;
+    return <SkeletonLoader />
   }
   return (
-    
     <div key="{product.id}">
-    <div className="relative">
-      <div className="relative h-72 w-full overflow-hidden rounded-lg">
-        <Media imgClassName={classes.image} resource={metaImage} fill />
-      </div>
-      <div className="relative mt-4">
-        <div className="text-sm font-medium text-gray-900">
-          {titleToUse && (
-            <h3 className={classes.title}>
-              <Link href={href} className={classes.titleLink}>
-                {titleToUse}
-              </Link>
-            </h3>
+      <div className="relative">
+        <div className="relative h-72 w-full overflow-hidden rounded-lg">
+          <div className={classes.mediaWrapper}>
+            {!metaImage && <div className={classes.placeholder}>Kein Bild verfügbar</div>}
+            {metaImage && typeof metaImage !== 'string' && (
+              <Media imgClassName={classes.image} resource={metaImage} fill />
+            )}
+          </div>
+        </div>
+        <div className="relative mt-4">
+          <div className="text-sm font-medium text-gray-900">
+            {titleToUse && (
+              <h3 className={classes.title}>
+                <Link href={href} className={classes.titleLink}>
+                  {titleToUse}
+                </Link>
+              </h3>
+            )}
+          </div>
+          {description && (
+            <p className={`mt-1 text-sm text-gray-500 ${classes.description}`}>
+              {sanitizedDescription}
+            </p>
           )}
         </div>
-        {description && (
-          <p className={`mt-1 text-sm text-gray-500 ${classes.description}`}>
-            {sanitizedDescription}
-          </p>
-        )}
-
+        <div className="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
+          <div
+            aria-hidden="true"
+            className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-0"
+          />
+        </div>
       </div>
-      <div className="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
-        <div
-          aria-hidden="true"
-          className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-0"
-        />
-
+      <div className="mt-6">
+        <a
+          href={href}
+          className="relative flex items-center justify-center rounded-md border border-transparent bg-red-600 text-white px-8 py-2 text-sm font-bold  hover:bg-red-500"
+        >
+          Objekt betrachten <span className="sr-only"> </span>
+        </a>
       </div>
     </div>
-    <div className="mt-6">
-    <a
-        href={href}
-        className="relative flex items-center justify-center rounded-md border border-transparent bg-red-600 text-white px-8 py-2 text-sm font-bold  hover:bg-red-500"
-      >
-       Objekt betrachten <span className="sr-only"> </span>
-      </a>
-    </div>
-  </div>
   )
 }
- 
