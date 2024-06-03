@@ -87,14 +87,9 @@ export const Card: React.FC<{
   return (
     <div key="{product.id}">
       <div className="relative">
-        <div className="relative h-72 w-full overflow-hidden rounded-lg">
-          <div className={classes.mediaWrapper}>
-            {!metaImage && <div className={classes.placeholder}>Kein Bild verfügbar</div>}
-            {metaImage && typeof metaImage !== 'string' && (
-              <Media imgClassName={classes.image} resource={metaImage} fill />
-            )}
-          </div>
-        </div>
+      <div className="relative h-72 w-full overflow-hidden rounded-lg">
+        <Media imgClassName={classes.image} resource={metaImage} fill />
+      </div>
         <div className="relative mt-4">
           <div className="text-sm font-medium text-gray-900">
             {titleToUse && (
