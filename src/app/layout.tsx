@@ -9,10 +9,10 @@ import { mergeOpenGraph } from './_utilities/mergeOpenGraph';
 import './global.css';
 
 const inter = Montserrat({  weight: '400',
-subsets: ['latin'], });
+subsets: ['latin'], display: 'swap', adjustFontFallback: false });
 
 const tub = Playfair({  weight: '400',
-subsets: ['latin'], });
+subsets: ['latin'], display: 'swap', adjustFontFallback: false });
  {/*import './_css/app.scss';*/}
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

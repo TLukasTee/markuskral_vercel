@@ -15,11 +15,11 @@ import classes from './index.module.scss'
 
 const inter = Montserrat({
   weight: '400',
-  subsets: ['latin'], 
+  subsets: ['latin'], display: 'swap', adjustFontFallback: false 
 });
 
 const tub = Playfair({  weight: '400',
-subsets: ['latin'], });
+subsets: ['latin'], display: 'swap', adjustFontFallback: false });
 export const ProductHero: React.FC<{
   product: Product
 }> = ({ product }) => {

@@ -43,11 +43,11 @@ import Logo3 from './images/logo/Logo (4).svg';
 
 const inter = Montserrat({
   weight: '400',
-  subsets: ['latin'], 
+  subsets: ['latin'], display: 'swap', adjustFontFallback: false 
 });
 
 const tub = Playfair({  weight: '400',
-subsets: ['latin'], });
+subsets: ['latin'], display: 'swap', adjustFontFallback: false });
 const perks = [
   {
     name: 'Instant Delivery',

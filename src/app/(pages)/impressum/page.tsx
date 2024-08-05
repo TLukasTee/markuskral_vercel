@@ -3,10 +3,10 @@ import { BookOpenIcon, CurrencyEuroIcon, MagnifyingGlassIcon, ScaleIcon, WrenchI
 import { Montserrat, Playfair } from "next/font/google";
 
 const inter = Montserrat({  weight: '400',
-subsets: ['latin'], });
+subsets: ['latin'], display: 'swap', adjustFontFallback: false });
 
 const tub = Playfair({  weight: ['400', '500', '600', '700'],
-subsets: ['latin'], });
+subsets: ['latin'], display: 'swap', adjustFontFallback: false });
 
 const features = [
   {
