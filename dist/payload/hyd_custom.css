@@ -1,0 +1,800 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300;0,5..1200,400;0,5..1200,500;0,5..1200,600;0,5..1200,800;1,5..1200,700&display=swap');
+
+#login-tilte-hyd {
+    font-family: 'Montserrat', serif;
+    font-weight: 300;
+}
+
+#login-subtilte-hyd {
+    font-family: 'Playfair', serif;
+}
+
+.login {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+  .graphics-logo {
+    visibility: hidden;
+  }
+
+  .login__brand {
+    visibility: hidden;
+  }
+
+  .form-submit button {
+
+    background-color:  rgb(220 38 38);
+    
+ 
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  .form-submit button:hover{
+    background-color: rgb(239 68 68)!important;
+  }
+
+
+#field-email {
+    background-color:  white;
+    color: black;
+    border-radius: 10px;
+    border-color: black;
+    border: 2px solid gray;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#field-password {
+    background-color:  white;
+    color: black;
+    border-radius: 10px;
+    border-color: black;
+    border: 2px solid gray;
+ 
+}
+
+.field-type label {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+}
+
+
+.dashboard {
+  background-color: white;
+}
+
+.nav {
+  background-color: white;
+  color: black;
+  font-family: 'Montserrat', serif;
+  border: 0;
+}
+
+.nav-group__label {
+  color: red;
+  
+}
+
+.nav-group__indicator .icon  {
+
+}
+
+#navbar {
+  font-family: 'Montserrat', serif;
+  
+
+}
+
+
+.nav-toggler {
+  border-radius: 10px;
+  background-color: transparent!important;
+}
+
+.hamburger__wrapper {
+  border-radius: 10px;
+}
+
+.hamburger__wrapper:hover {
+  background-color: whitesmoke;
+  color: white;
+}
+
+.hamburger__icon {
+  border-radius: 10px;
+}
+
+.hamburger__icon{
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+
+ 
+}
+
+.hamburger__wrapper::after {
+  border-radius: 10px;
+
+}
+
+.hamburger::before {
+  border-radius: 15px;
+  background-color: transparent;
+
+}
+
+.hamburger__icon {
+  border-radius: 10px;
+  color: rgb(110, 36, 36)!important;
+}
+
+
+.hamburger__icon::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: currentColor;
+  box-shadow:
+      0 6px 0,
+      6px 6px 0,
+      12px 6px 0,
+      6px 12px 0,
+      12px 12px 0,
+      6px 0 0,
+      12px 0 0,
+      0 12px 0
+  ;
+  border-radius: 10px;
+
+}
+
+
+
+.hamburger__lines {
+  visibility: hidden;
+}
+
+.hamburger__close-icon {
+  visibility: hidden;
+}
+
+.app-header{
+  background-color: #fafafa;
+  color: black;
+  border-bottom: 1px solid #e4e4e7;
+
+}
+
+.step-nav::after  {
+  visibility: hidden;
+}
+
+
+#app{
+
+  background-color: whitesmoke;
+}
+
+.template-default{
+  background-color: black;
+}
+
+#dashboard-hyd {
+  font-family: 'Montserrat', serif;
+
+}
+
+
+
+
+#nav-media {
+  visibility: hidden;
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+#nav-categories {
+  visibility: hidden;
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+#nav-orders {
+  visibility: hidden;
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+
+#nav-users {
+  visibility: hidden;
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+#nav-pages {
+  visibility: hidden;
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+.nav__link {
+  color: black;
+  background-color: white;
+  padding: 10px!important;
+  border: 2px solid #dddddd;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  font-family: 'Montserrat', serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+}
+
+.nav__link:focus {
+
+  background-color: black;
+  color: white;
+}
+
+.nav__link-label:hover {
+
+
+  text-decoration: none!important;
+
+}
+
+.nav-group__content {
+
+}
+
+.nav-group__content a {
+  
+  text-decoration: none!important;
+
+}
+
+.nav-group__label {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+}
+
+.nav-group__indicator {
+
+
+  visibility: hidden;
+
+
+}
+
+.collection-edit {
+  color: black;
+}
+
+.nav {
+  background-color: white;
+  color: black;
+  border-right: 2px solid #e4e4e7;
+}
+
+.template-default__wrap {
+
+  background-color: #fafafa;
+}
+
+.collection-list__header h1 {
+  color: black!important;
+}
+
+.collection-list {
+
+  margin-top: 50px;
+
+}
+
+.table tr,td {
+
+  background-color: white;
+  color: black;
+
+  border: 1px solid black;
+}
+
+
+
+
+
+
+.collection-edit__form {
+
+  margin-top: 50px;
+}
+
+
+.doc-controls__wrapper{
+
+  background-color: black!important;
+}
+
+.doc-controls {
+  background-color: black!important;
+}
+
+.doc-header__title  {
+  color: rgb(0, 0, 0);
+}
+
+.group-field__wrap{
+  color: black; 
+}
+
+table {
+
+
+  border: 3px solid black;
+  border-radius: 35px;
+}
+
+.list-controls__buttons-wrap {
+  visibility: hidden;
+}
+
+.cell-title {
+
+  font-size: 17px;
+}
+
+.sort-column__label {
+  font-size: 15px;
+}
+
+
+.render-fields  #field-title, #field-price,  .textarea-element {
+  background-color: white;
+  color: black;
+}
+
+.logout__wrap {
+
+  color: black;
+
+
+}
+
+
+
+.btn {
+
+  color: black;
+  border: 1px solid black;
+
+
+}
+
+.btn:hover {
+  background-color: rgb(225, 221, 216);
+
+}
+
+
+
+.nav__log-out svg {
+  color: black;
+  background-color: black;
+
+  border-radius: 12px;
+}
+
+.doc-controls__wrapper {
+
+  color: white!important;
+}
+
+button {
+  color: white!important;
+}
+
+.upload__toggler .btn {
+
+  color: white!important;
+}
+
+
+#login-tilte-hyd {
+    font-family: 'Montserrat', serif !important;
+    font-weight: 300 !important;
+}
+
+#login-subtilte-hyd {
+    font-family: 'Playfair', serif !important;
+}
+
+.login {
+    background-color: white !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.graphics-logo {
+    visibility: hidden !important;
+}
+
+.login__brand {
+    visibility: hidden !important;
+}
+
+.form-submit button {
+    background-color: rgb(220 38 38) !important;
+    color: white !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.3em !important;
+    text-transform: uppercase !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.form-submit button:hover{
+    background-color: rgb(239 68 68) !important;
+}
+
+#field-email {
+    background-color: white !important;
+    color: black !important;
+    border-radius: 10px !important;
+    border-color: black !important;
+    border: 2px solid gray !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#field-password {
+    background-color: white !important;
+    color: black !important;
+    border-radius: 10px !important;
+    border-color: black !important;
+    border: 2px solid gray !important;
+}
+
+.field-type label {
+    color: black !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+.dashboard {
+  background-color: white !important;
+}
+
+.nav {
+  background-color: white !important;
+  color: black !important;
+  font-family: 'Montserrat', serif !important;
+  border: 0 !important;
+}
+
+.nav-group__label {
+  color: red !important;
+}
+
+.nav-toggler {
+  border-radius: 10px !important;
+  background-color: transparent !important;
+}
+
+.hamburger__wrapper {
+  border-radius: 10px !important;
+}
+
+.hamburger__wrapper:hover {
+  background-color: whitesmoke !important;
+  color: white !important;
+}
+
+.hamburger__icon {
+  border-radius: 10px !important;
+  color: rgb(110, 36, 36) !important;
+}
+
+.hamburger__lines {
+  visibility: hidden !important;
+}
+
+.hamburger__close-icon {
+  visibility: hidden !important;
+}
+
+.app-header{
+  background-color: #fafafa !important;
+  color: black !important;
+  border-bottom: 1px solid #e4e4e7 !important;
+}
+
+.step-nav::after {
+  visibility: hidden !important;
+}
+
+#app{
+  background-color: whitesmoke !important;
+}
+
+.template-default{
+  background-color: black !important;
+}
+
+#nav-media, #nav-categories, #nav-orders, #nav-users, #nav-pages {
+  visibility: hidden !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.nav__link {
+  color: black !important;
+  background-color: white !important;
+  padding: 10px !important;
+  border: 2px solid #dddddd !important;
+  margin-bottom: 20px !important;
+  border-radius: 15px !important;
+  font-family: 'Montserrat', serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  text-decoration: none !important;
+}
+
+.nav__link:focus {
+  background-color: black !important;
+  color: white !important;
+}
+
+.nav-group__content a {
+  text-decoration: none !important;
+}
+
+.nav-group__label {
+  font-size: 20px !important;
+  margin-bottom: 20px !important;
+  text-transform: uppercase !important;
+}
+
+.nav-group__indicator {
+  visibility: hidden !important;
+}
+
+.collection-edit {
+  color: black !important;
+}
+
+.nav {
+  background-color: white !important;
+  color: black !important;
+  border-right: 2px solid #e4e4e7 !important;
+}
+
+.template-default__wrap {
+  background-color: #fafafa !important;
+}
+
+.collection-list__header h1 {
+  color: black !important;
+}
+
+.collection-list {
+  margin-top: 50px !important;
+}
+
+.table tr, td {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
+
+
+
+.collection-edit__form {
+  margin-top: 50px !important;
+}
+
+.doc-controls__wrapper, .doc-controls {
+  background-color: black !important;
+}
+
+.doc-header__title {
+  color: rgb(0, 0, 0) !important;
+}
+
+.group-field__wrap{
+  color: black !important; 
+}
+
+table {
+  border: 3px solid black !important;
+  border-radius: 35px !important;
+}
+
+.list-controls__buttons-wrap {
+  visibility: hidden !important;
+}
+
+.cell-title {
+  font-size: 17px !important;
+}
+
+.sort-column__label {
+  font-size: 15px !important;
+}
+
+.render-fields #field-title, #field-title2, .textarea-element, .textarea-outer, .file-details, .upload__wrap, .upload__toggler {
+  background-color: white !important;
+  color: black !important;
+}
+
+.doc-controls__controls button {
+  visibility: hidden!important;
+}
+
+.form-submit button {
+  visibility: visible!important;
+}
+
+.doc-tab {
+  color: white!important;
+  background-color: #171717!important;
+}
+.query-inspector__configuration, .query-inspector__results {
+  visibility: hidden!important;
+}
+
+.doc-drawer__header-text {
+  color: white!important;
+}
+
+.rich-text__wrap {
+  visibility: hidden!important;
+}
+
+.dropzone  {
+
+  color: white!important;
+
+}
+
+.dropzone .btn__content .btn__label {
+
+  color: white!important;
+
+}
+
+label[for=field-alt] {
+  color: white!important;
+}
+
+label[for=field-caption] {
+    visibility: hidden;
+  }
+  
+label[for=field-alt] {
+    color: black!important;
+  }
+  
+  
+
+.btn__content .btn__label {
+
+  color: black !important;
+}
+
+#action-save-draft .btn__content .btn__label {
+  color: white !important;
+}
+
+#action-save .btn__content .btn__label {
+  color: white !important;
+}
+
+.logout__wrap {
+  color: black !important;
+}
+
+.btn {
+  color: black !important;
+  border: 1px solid black !important;
+}
+
+.btn:hover {
+  background-color: rgb(225, 221, 216) !important;
+}
+
+.nav__log-out svg {
+  color: black !important;
+  background-color: black !important;
+  border-radius: 12px !important;
+}
+
+.doc-controls__wrapper {
+  color: white !important;
+}
+
+button {
+  color: white !important;
+}
+
+.upload__toggler .btn {
+  color: white !important;
+}
+
+.relationship-add-new__add-button {
+  visibility: hidden;
+}
+
+.rs__control css-13cymwt-control {
+  visibility: hidden;
+}
+
+
+.drawer__content-children {
+
+  background-color: white;
+  
+}
+
+.doc-drawer__header h2 {
+  color: rgb(220 38 38)!important;
+}
+
+
+
+.doc-drawer__header button {
+  background-color: black;
+}
+
+input {
+    border-radius: 15px!important;
+    visibility: visible;
+}
+
+label {
+    font-size: 20px!important;
+    margin-bottom: 5px!important;
+    border-radius: 15px!important;
+    visibility: visible;
+    font-family: 'Montserrat', serif;
+}
+
+.thumbnail  {
+    border-radius: 15px!important;
+}
+
+button {
+    color: white!important;
+    font-family: 'Montserrat', serif;
+}
+
+.relationship-add-new__add-button {
+    visibility: hidden!important;
+}
+

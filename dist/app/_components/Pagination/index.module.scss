@@ -1,0 +1,30 @@
+@import '../../_css/type.scss';
+$base: 100px;
+.pagination {
+  @extend %label;
+  display: flex;
+  align-items: center;
+  gap: calc(var(--base) / 2);
+  margin-bottom: 20px;
+}
+
+.button {
+  all: unset;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  padding: calc(var(--base) / 2);
+  color: var(--color-elevation-500);
+  border: 1px solid var(--theme-elevation-200);
+
+  &:disabled {
+    cursor: not-allowed;
+    color: var(--theme-elevation-200);
+    border-color: var(--theme-elevation-150);
+  }
+}
+
+.icon {
+  width:  $base / 3;
+  height:  $base / 3;
+}

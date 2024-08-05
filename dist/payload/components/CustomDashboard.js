@@ -1,0 +1,70 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var react_1 = __importDefault(require("react"));
+var solid_1 = require("@heroicons/react/20/solid");
+require("../../tailwind.css");
+var baseClass = 'before-dashboard';
+var customDashboard = function () {
+    return react_1.default.createElement("div", { className: "" },
+        react_1.default.createElement("div", { className: "relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-48 " },
+            react_1.default.createElement("div", { className: "absolute inset-0 -z-10 overflow-hidden" },
+                react_1.default.createElement("svg", { className: "absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]", "aria-hidden": "true" },
+                    react_1.default.createElement("defs", null,
+                        react_1.default.createElement("pattern", { id: "e813992c-7d03-4cc4-a2bd-151760b470a0", width: 200, height: 200, x: "50%", y: -1, patternUnits: "userSpaceOnUse" },
+                            react_1.default.createElement("path", { d: "M100 200V.5M.5 .5H200", fill: "none" }))),
+                    react_1.default.createElement("svg", { x: "50%", y: -1, className: "overflow-visible fill-gray-50" },
+                        react_1.default.createElement("path", { d: "M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z", strokeWidth: 0 })),
+                    react_1.default.createElement("rect", { width: "100%", height: "100%", strokeWidth: 0, fill: "url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" }))),
+            react_1.default.createElement("div", { className: "mx-auto grid max-w-full grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-full lg:grid-cols-2 lg:items-start lg:gap-y-10" },
+                react_1.default.createElement("div", { className: "lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-full lg:grid-cols-2 lg:gap-x-8 lg:px-8" },
+                    react_1.default.createElement("div", { className: "lg:pr-4" },
+                        react_1.default.createElement("div", { className: "lg:max-w-full" },
+                            react_1.default.createElement("p", { className: "text-4xl font-semibold leading-7 text-red-600" }, "Hallo Herr Kral!"),
+                            react_1.default.createElement("p", { className: "mt-6 text-2xl leading-9 text-gray-700" },
+                                "Wir freuen uns, Ihnen eine einfache und effiziente M\u00F6glichkeit anzubieten, mit der Sie Ihre Sammlung von Antiquit\u00E4ten selbst verwalten k\u00F6nnen. ",
+                                react_1.default.createElement("br", null),
+                                " Unser System erm\u00F6glicht es Ihnen, je nach Ihren Bed\u00FCrfnissen und dem aktuellen Stand Ihrer Kollektion, neue Antiquit\u00E4tenobjekte hinzuzuf\u00FCgen oder vorhandene zu entfernen."),
+                            react_1.default.createElement("h1", { className: "mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl" }, "Anleitung zur Verwaltung:")))),
+                react_1.default.createElement("div", { className: "lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-full lg:grid-cols-2 lg:gap-x-8 lg:px-8" },
+                    react_1.default.createElement("div", { className: "lg:pr-4" },
+                        react_1.default.createElement("div", { className: "max-w-full text-2xl leading-9 text-gray-700 lg:max-w-full" },
+                            react_1.default.createElement("ul", { role: "list", className: "space-y-8 text-gray-600" },
+                                react_1.default.createElement("li", { className: "flex gap-x-3" },
+                                    react_1.default.createElement(solid_1.ArrowRightIcon, { className: "mt-1 h-5 w-5 flex-none text-indigo-600", "aria-hidden": "true" }),
+                                    react_1.default.createElement("span", null,
+                                        react_1.default.createElement("strong", { className: "font-semibold text-gray-900" }, "Zugriff auf die Sammlung \"Antiquit\u00E4ten\": "),
+                                        " ",
+                                        react_1.default.createElement("br", null),
+                                        " W\u00E4hlen Sie in der Navigationsleiste unter dem Punkt ",
+                                        react_1.default.createElement("strong", { className: 'tracking-wide' }, "\"Sammlungen\" "),
+                                        "  die Option \"Antiquit\u00E4ten\" aus. Anschlie\u00DFend erhalten Sie eine \u00DCbersicht \u00FCber die bereits hochgeladenen Produkte.")),
+                                react_1.default.createElement("li", { className: "flex gap-x-3" },
+                                    react_1.default.createElement(solid_1.ArrowRightIcon, { className: "mt-1 h-5 w-5 flex-none text-indigo-600", "aria-hidden": "true" }),
+                                    react_1.default.createElement("span", null,
+                                        react_1.default.createElement("strong", { className: "font-semibold text-gray-900" }, "Erstellen eines neuen Antiquit\u00E4tseintrag "),
+                                        " ",
+                                        react_1.default.createElement("br", null),
+                                        " Klicken Sie neben der Option ",
+                                        react_1.default.createElement("strong", { className: 'tracking-wide' }, " \"Antiquit\u00E4ten\" "),
+                                        "auf  ",
+                                        react_1.default.createElement("strong", { className: 'tracking-wide' }, "\"Neu erstellen\".  "),
+                                        " Daraufhin \u00F6ffnet sich ein Fenster, in dem Sie die Details Ihrer Antiquit\u00E4t erfassen und ein entsprechendes Bild hochladen k\u00F6nnen. Rechts im Fenster haben Sie die M\u00F6glichkeit, die passende Kategorie f\u00FCr das Objekt auszuw\u00E4hlen.")),
+                                react_1.default.createElement("li", { className: "flex gap-x-3" },
+                                    react_1.default.createElement(solid_1.ArrowRightIcon, { className: "mt-1 h-5 w-5 flex-none text-indigo-600", "aria-hidden": "true" }),
+                                    react_1.default.createElement("span", null,
+                                        react_1.default.createElement("strong", { className: "font-semibold text-gray-900" }, "Ver\u00F6ffentlichung der \u00C4nderungen "),
+                                        " ",
+                                        react_1.default.createElement("br", null),
+                                        "Sobald Sie alle erforderlichen Informationen eingegeben haben, best\u00E4tigen Sie diese durch Klicken auf ",
+                                        react_1.default.createElement("strong", { className: 'tracking-wide' }, " \"\u00C4NDERUNGEN VER\u00D6FFENTLICHEN\"  "),
+                                        " am oberen Rand. Nach erfolgreicher Eingabe erhalten Sie eine Benachrichtigung, dass das Produkt erfolgreich hochgeladen wurde, und k\u00F6nnen die Ver\u00F6ffentlichung auf Ihrer Website \u00FCberpr\u00FCfen."))),
+                            react_1.default.createElement("h2", { className: "mt-16 text-2xl font-bold tracking-tight text-gray-900" }, "Sie brauchen Hilfe? Kein Problem."),
+                            react_1.default.createElement("p", { className: "mt-6" },
+                                "Senden Sie uns einfache eine Whatsapp Nachricht an ",
+                                react_1.default.createElement("strong", null, " +436702024825 "),
+                                " und wir werden uns schnellstm\u00F6glich um Sie k\u00FCmmern!")))))));
+};
+exports.default = customDashboard;
