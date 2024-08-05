@@ -1,6 +1,4 @@
 {
-  "/not-found": "app/not-found.js",
   "/page": "app/page.js",
-  "/api/revalidate/route": "app/api/revalidate/route.js",
-  "/(pages)/products/[slug]/page": "app/(pages)/products/[slug]/page.js"
+  "/(pages)/[slug]/page": "app/(pages)/[slug]/page.js"
 }
